@@ -5,15 +5,15 @@ import axios from 'axios';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
+    firstname: '',
+    lastname: '',
     business: '',
     location: '',
     email: '',
     phone: '',
     subject: '',
-    jacketBrand: '',
-    jacketType: '',
+    brand: '',
+    type: '',
     quantity: '',
   });
 
@@ -26,19 +26,19 @@ const ContactForm = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:3001/send-email', formData);
+      const response = await axios.post('/send-email', formData);
       if (response.data.success) {
         alert('Email sent successfully.');
         setFormData({
-          firstName: '',
-          lastName: '',
+          firstname: '',
+          lastname: '',
           business: '',
           location: '',
           email: '',
           phone: '',
           subject: '',
-          jacketBrand: '',
-          jacketType: '',
+          brand: '',
+          type: '',
           quantity: '',
         });
       } else {
@@ -92,11 +92,11 @@ const ContactForm = () => {
         <label htmlFor="subject">Subject</label>
           <textarea id="subject" name="subject" placeholder="Write here.." required></textarea>
           <label htmlFor="life-jacket-brand">Brand of life jacket</label>
-          <input type="text" id="life-jacket-brand" name="life-jacket-brand" placeholder="Enter brand.." required />
+          <input type="text" id="life-jacket-brand" name="brand" placeholder="Enter brand.." required />
         <div className="row">
         <div className="col-md-6">
           <label htmlFor="life-jacket-type">Type of life jacket</label>
-          <select id="life-jacket-type" name="life-jacket-type" required>
+          <select id="life-jacket-type" name="type" required>
             <option value="" disabled selected>
               Select a type
             </option>
