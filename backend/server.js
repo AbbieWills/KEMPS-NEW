@@ -1,8 +1,6 @@
 import express from 'express';
 import { createTransport } from 'nodemailer';
 import { json } from 'body-parser';
-import axios from 'axios';
-require('dotenv').config();
 const app = express();
 const port = process.env.PORT || 3001;
 
