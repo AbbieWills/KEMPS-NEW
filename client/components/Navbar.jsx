@@ -36,32 +36,14 @@ const NavbarComponent = () => {
             <NavLink
                 className="nav-link"
                 activeclassname="active"
-                to="/mappage"
-              >
-                Map
-              </NavLink>
-            </li>
-            <li className="nav-item">
-            <NavLink
-                className="nav-link"
-                activeclassname="active"
                 to="/journey"
               >
-                Journey
-              </NavLink>
-            </li>
-            <li className="nav-item">
-            <NavLink
-                className="nav-link"
-                activeclassname="active"
-                to="/memories"
-              >
-                Memories
+                About
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" activeclassname="active" to="/user">
-                User and Rewards
+                Contact
               </NavLink>
             </li>
           </ul>
