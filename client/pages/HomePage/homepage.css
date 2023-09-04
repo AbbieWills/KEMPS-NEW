@@ -1,112 +1,99 @@
+/* Main background colour */
 body {
-    background-color: #8CD2F6 !important;
-
+    background-color: #add1f6 !important;
 }
 
-
-.background-home {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .peaks {
-    width: 100%;
-    height: 100%;
-  }
-  
-
+/* Title text */
 .intro {
-    color: #7DB4D8 !important;
+    color: #0081C9;
     padding: 30px 50px 70px 50px;
     width: 100%;
     margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
     text-align: center;
-    font-family: 'Lilita One', cursive;
-    font-size: 4rem;
-    margin-bottom: -4rem;
-    -webkit-text-stroke: 1.4px white;
+    font-size: 2.9rem;
+    margin-bottom: -2rem;
+    background-color: #eff2f5c3;
+    -webkit-text-fill-color: #0081C9; 
+    -webkit-text-stroke: 0.7px #86E5FF; 
 }
 
+/* Intro text */
 .explain {
-
-    box-shadow: inset 0 0 50px #c3e3f3db !important;
     background-color: #eff2f5c3;
-    margin: 30px auto 10px;
     padding: 30px;
-    border-radius: 10px;
-    font-family: 'Manrope', sans-serif;
+    /* border-radius: 10px; */
+    font-family: 'Maven Pro', sans-serif;
     color: #366491;
     text-align: center;
     font-size: 1.7rem;
-  }
-
-  
-  .intro-explain-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    width: 100% !important;
+    margin-top: -5rem !important;
   }
   
-  .column-image {
-    width: 85%;
-    height: auto;
-    margin: 35px 0 0 30px;
-    border-radius: 10px;
-}
-  
 
-
-.mt-5 {
-    font-family: 'Manrope', sans-serif;
-    box-shadow: inset 0 0 50px #7bbfe1db !important;
+/* Icon div */
+.features {
+    font-family: 'Maven Pro', sans-serif;
     font-size: 1.4rem;
     color: #366491;
-    box-shadow: inset 0 0 50px #c3e3f3db !important;
-    background-color: #eff2f5c3;
     padding: 30px 50px 30px 50px;
-    margin: 0 auto; 
-    text-align: center;
-    border-radius: 10px;
-    margin-bottom: 40px;
-}
+    margin-bottom: 5vh;
+    width: 100% !important;
+    background-color: #eff2f5c3;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+    }
+
 .mb-3 {
     font-size: 3.6rem;
 }
 
+
+/* Feature icons */
 .route {
     padding-bottom: 13px;
 }
 
-.pass {
-    color: #00043f;
+.ring {
+    color: #f68249f8;
+    margin-top: -28px !important;
 }
 
 .route {
-    color: #DFA878;
+    color: #ff0000b8;
 }
 
-.leaf {
-    color: #557A46
+.calendar {
+    color: #35a4c6
 }
 
-.globe {
-    color: #7A9D54;
+.truck {
+    color: #3f9708f8;
 }
 
-.gift {
-    color: #B31312;
+.pound {
+    color: #288886;
 }
 
-.book {
-    color: #765827
+.ship {
+    color: #3e50f3c8;
 }
 
 .iconTitle {
-    color: #5394d4;
+    color: #0081C9;
     font-size: 1.8rem;
+}
+
+
+@media (max-width: 1150px) {
+    .intro {
+        font-size: 2rem;
+    }
+    .explain {
+        font-size: 1.4rem;
+    }
+    .features {
+        font-size: 1.2rem;
+    }
 }

@@ -4,9 +4,9 @@ import {
   HomePage,
   AboutPage,
   ContactPage
-
 } from "../pages";
 import NavbarComponent from ".././components/Navbar";
+import Footer from ".././components/Footer/Footer";
 
 
 function App() {
@@ -18,6 +18,7 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
+        <Footer />
     </>
   );
 }
