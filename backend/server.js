@@ -1,6 +1,8 @@
-import express from 'express';
-import { createTransport } from 'nodemailer';
-import { json } from 'body-parser';
+const express = require('express');
+const { createTransport } = require('nodemailer');
+const { json } = require('body-parser');
+const cors = require('cors');
+
 const app = express();
 const port = process.env.PORT || 3001;
 
@@ -22,13 +24,13 @@ const transporter = createTransport({
   },
 });
 
+// Enable CORS
+app.use(cors());
+
 
 // Define a route to handle form submissions
-import cors from 'cors';
 app.post('/send-email', (req, res) => {
   const { firstname, lastname, business, location, email, phone, subject, brand, type, quantity } = req.body;
-
-  app.use(cors());
 
   // Compose email message
   const mailOptions = {
