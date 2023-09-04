@@ -37,12 +37,7 @@ const NavbarComponent = () => {
                 About
               </NavLink>
             </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" activeclassname="active" to="/pricing">
-                Pricing
-              </NavLink>
-            </li>
-                        <li className="nav-item">
+              <li className="nav-item">
             <NavLink
                 className="nav-link"
                 activeclassname="active"

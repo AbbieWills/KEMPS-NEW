@@ -53,7 +53,7 @@ html {
     margin-left: -50px;
 }
 
-.navbar-brand:hover{
+.navbar-brand:hover {
     color: #0081C9 !important;
 
 }
@@ -63,12 +63,13 @@ html {
 .logo {
     width: 8%;
     height: 8%;
-    color: #fff;
-}
+    transition: filer 0.3 ease;}
 
 .logo:hover {
-    color: #000;
+    filter: brightness(1.2);
 }
+
+
 
 /* Media Queries */
 @media (max-width: 1150px) {

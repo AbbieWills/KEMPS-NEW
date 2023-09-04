@@ -11,7 +11,7 @@ const HomePage = () => {
     <div className="background-home">
     </div>
       <div className="row intro-explain-container">
-          <h1 className='intro'>Life-Jacket Servicing!</h1>
+          <h1 className='intro'>Life Jacket Servicing!</h1>
           <ImageCarousel />
             <p className='explain'>At Kemps MPS, we service life jackets as we understand the importance of keeping your 
       life jackets in peak condition.</p>

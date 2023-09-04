@@ -5,9 +5,10 @@ const Footer = () => {
     return (
 <footer className='footer'>
     <div className='container'>
-    <p>&copy;  Serviced with care &#128295; © Kemps Maritime Services {new Date().getFullYear()} - Website by Abbie Wills</p>
+    <p>© Copyright Kemps Maritime Services Ltd {new Date().getFullYear()} | Serviced with care &#128295; | Website by <a className='anchor' href="https://www.ddicecream.co.uk" target='_blank'>Abbie Wills</a></p>
     </div>
-    </footer>    );
+    </footer> 
+    );
 }
 
 export default Footer;
