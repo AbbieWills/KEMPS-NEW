@@ -1,0 +1,16 @@
+.full-width-carousel {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+    width: 100vw !important;
+    height: 75vh !important;
+  
+  }
+  
+  .carousel-img {
+    width: 100vw !important;
+    height: 70vh !important;
+  
+  }
+  
+  
