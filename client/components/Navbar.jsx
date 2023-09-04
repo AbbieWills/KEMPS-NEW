@@ -1,41 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlane } from "@fortawesome/free-solid-svg-icons";
-import { useCredentials } from "../contexts";
 
 const NavbarComponent = () => {
-  const [isSignedIn, setIsSignedIn] = useState(false);
-  const [shouldReload, setShouldReload] = useState(false);
-
-  useEffect(() => {
-    const token = localStorage.getItem("token");
-    setIsSignedIn(!!token);
-  }, [isSignedIn]);
-
-  const handleLogout = async () => {
-    try {
-      const response = await fetch("http://localhost:3000/users/logout", {
-        method: "DELETE",
-        headers: {
-          Authorization: localStorage.getItem("token"), 
-        },
-      });
-
-      if (response.status === 202) {
-        localStorage.removeItem("token"); 
-        localStorage.removeItem("user_id")
-        setIsSignedIn(false); 
-        window.location.reload()
-      } else {
-        console.error("Logout failed");
-      }
-    } catch (error) {
-      console.error("Error during logout:", error);
-    }
-  };
   
   return (
     <nav className="navbar navbar-expand-lg">
@@ -93,21 +63,6 @@ const NavbarComponent = () => {
               <NavLink className="nav-link" activeclassname="active" to="/user">
                 User and Rewards
               </NavLink>
-            </li>
-            <li className="nav-item">
-              {isSignedIn ? (
-                <button className="nav-link" onClick={handleLogout}>
-                Logout
-              </button>
-              ) : (
-                <NavLink
-                  className="nav-link"
-                  activeclassname="active"
-                  to="/login"
-                >
-                  Login
-                </NavLink>
-              )}
             </li>
           </ul>
         </div>
