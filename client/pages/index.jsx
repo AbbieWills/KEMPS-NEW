@@ -1,4 +1,4 @@
 export {default as HomePage} from "./HomePage/HomePage"
-export {default as JourneyPage} from "./JourneyPage/JourneyPage"
-export {default as UserPage} from "./UserPage/UserPage"
+export {default as AboutPage} from "./AboutPage/AboutPage"
+export {default as ContactPage} from "./ContactPage/ContactPage"
 

@@ -36,13 +36,13 @@ const NavbarComponent = () => {
             <NavLink
                 className="nav-link"
                 activeclassname="active"
-                to="/journey"
+                to="/about"
               >
                 About
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" activeclassname="active" to="/user">
+              <NavLink className="nav-link" activeclassname="active" to="/contact">
                 Contact
               </NavLink>
             </li>

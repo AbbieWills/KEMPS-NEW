@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './UserPage.css';
+import './ContactPage.css';
 
 const ContactForm = () => {
   const [selectedBrand, setSelectedBrand] = useState('');

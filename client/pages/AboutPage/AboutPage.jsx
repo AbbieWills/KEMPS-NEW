@@ -1,5 +1,5 @@
 import React from 'react';
-import './JourneyPage.css';
+import './AboutPage.css';
 import waves from './Wave.svg'
 
 const AboutPage = () => {

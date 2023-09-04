@@ -2,8 +2,9 @@ import React from "react";
 import { Routes, Route } from "react-router-dom"; 
 import {
   HomePage,
-  JourneyPage,
-  UserPage,
+  AboutPage,
+  ContactPage
+
 } from "../pages";
 import NavbarComponent from ".././components/Navbar";
 
@@ -14,8 +15,8 @@ function App() {
       <NavbarComponent />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/journey" element={<JourneyPage />} />
-        <Route path="/user" element={<UserPage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
     </>
   );
