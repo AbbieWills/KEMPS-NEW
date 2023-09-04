@@ -1,13 +1,13 @@
-const express = require('express');
-const nodemailer = require('nodemailer');
-const bodyParser = require('body-parser');
-const axios = require('axios');
+import express from 'express';
+import { createTransport } from 'nodemailer';
+import { json } from 'body-parser';
+import axios from 'axios';
 require('dotenv').config();
 const app = express();
 const port = process.env.PORT || 3001;
 
 // Middleware
-app.use(bodyParser.json());
+app.use(json());
 
 // Create a Nodemailer transporter
 // const transporter = nodemailer.createTransport({
@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 //     user: 'missabbiewills@gmail.com',
 //   },
 // });
-const transporter = nodemailer.createTransport({
+const transporter = createTransport({
   host: 'smtp.gmail.com',
   port: 465,
   secure: true,
@@ -26,7 +26,7 @@ const transporter = nodemailer.createTransport({
 
 
 // Define a route to handle form submissions
-const cors = require('cors');
+import cors from 'cors';
 app.post('/send-email', (req, res) => {
   const { firstname, lastname, business, location, email, phone, subject, brand, type, quantity } = req.body;
 
