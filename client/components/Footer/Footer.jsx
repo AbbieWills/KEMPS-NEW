@@ -5,7 +5,7 @@ const Footer = () => {
     return (
 <footer className='footer'>
     <div className='container'>
-    <p>&copy; {new Date().getFullYear()} Serviced with care &#128295; © Kemps Maritime Services - Website by Abbie Wills</p>
+    <p>&copy;  Serviced with care &#128295; © Kemps Maritime Services {new Date().getFullYear()} - Website by Abbie Wills</p>
     </div>
     </footer>    );
 }

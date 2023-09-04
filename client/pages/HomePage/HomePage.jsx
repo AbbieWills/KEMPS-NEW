@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLifeRing, faLocationDot, faShip, faTruckFast, faSterlingSign, faCalendarCheck } from '@fortawesome/free-solid-svg-icons';
 import ImageCarousel from '../../components/Carousel/carousel.jsx';
 
-
 const HomePage = () => {
   return (
     <>

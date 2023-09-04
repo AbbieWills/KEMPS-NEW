@@ -2,18 +2,14 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Navbar.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlane } from "@fortawesome/free-solid-svg-icons";
+import logo from "./logo.png";
 
 const NavbarComponent = () => {
-  
   return (
     <nav className="navbar navbar-expand-lg">
       <div className="container">
         <NavLink className="navbar-brand" to="/">
-          Travel-Wise
-        </NavLink>
-        <FontAwesomeIcon icon={faPlane} size="2x" className="mb-3 plane" />
+        Kemps Maritime Professional Services <img className="logo" src={logo} alt="logo" /></NavLink>
         <button
           className="navbar-toggler"
           type="button"
@@ -42,7 +38,16 @@ const NavbarComponent = () => {
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" activeclassname="active" to="/contact">
+              <NavLink className="nav-link" activeclassname="active" to="/pricing">
+                Pricing
+              </NavLink>
+            </li>
+                        <li className="nav-item">
+            <NavLink
+                className="nav-link"
+                activeclassname="active"
+                to="/contact"
+              >
                 Contact
               </NavLink>
             </li>
