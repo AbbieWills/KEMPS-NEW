@@ -11,25 +11,17 @@ const AboutPage = () => {
       </div>
       <div className="about">
         <h1>About Us</h1>
-        <p>
-          Welcome to Kemps MPS, your trusted partner for life jacket servicing. We understand the
-          importance of safety on the water, and that's why we're committed to keeping your life jackets
-          in peak condition.
-        </p>
-        <p>
-          With years of experience in the industry, our team of experts is dedicated to ensuring that
-          your life jackets meet the highest safety standards. We offer comprehensive servicing and
-          inspection to make sure your life jackets are ready for any adventure.
-        </p>
-        <p>
-          At Kemps MPS, safety is our top priority. Whether you're a recreational boater, a fisherman,
-          or an adventure seeker, you can trust us to provide reliable and professional life jacket
-          servicing.
-        </p>
-        <p> <a className='contact-link' href='/contact'>Contact us</a> today to learn more about our services and how we can help you stay safe on the water.</p>
+        <p> </p>
         <div className='service-text'>
-        <h2>Servicing</h2>
-        <p>All life jackets are serviced same etc. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          <div className='row'>
+          <p className='col-md-7 harryIntro'> Hello, I am Harry, a 23 year old seasoned Navigation Officer currently serving on Oil tankers, and proudly assuming the role of Director at Kemps Maritime Professional Services (KempsMPS). <br/><br/> My unwavering commitment revolves around the paramount importance of safety and its continuous enhancement within the maritime sector. Consequently, I have chosen to devote my time to ensuring that all life jackets serviced through KempsMPS adhere to the most stringent safety standards.
+          <br/><br/> Our approach hinges on the pillars of quality assurance, comprehensive staff training, and the utilization of cutting-edge servicing equipment. </p> <img className="col-md-5 photoOfHarry" src='https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png'></img></div>
+        <h2>Why Choose KempsMPS?</h2>
+          <p>
+          In an industry characterized by non-stop operations 24/7, 365 days a year, it is abundantly clear that efficiency and punctuality are of the essence. Regrettably, many approved service stations fail to align with the rigorous schedules inherent to the shipping sector. Moreover, securing an appointment for life jacket servicing with these stations can often entail waiting for weeks on end. <br/> <br/>It is my firm belief that such a situation is in dire need of change, and KempsMPS is committed to leading this transformation.
+          KempsMPS understands the challenges posed by the shipping industry's demanding timelines, and we have taken decisive steps to address them. We operate round the clock to ensure the prompt collection and servicing of your life jackets. Additionally, we are committed to providing you with a realistic timeframe for the completion of the servicing process. Our aspiration is to deliver service of the highest safety standards with an expedited turnaround time.
+          <br/><br/> Leveraging my extensive experience in the maritime industry, I am determined to enhance the efficiency and safety of life jacket servicing. At KempsMPS, we blend maritime expertise with unwavering dedication to redefine industry standards and meet the evolving needs of our valued clients. </p>
+          <p className='contact-link-text'><a className='contact-link' href='/contact'>Contact us</a> today to learn more about our services and how we can help you stay safe on the water.</p>
         </div>
       </div>
 

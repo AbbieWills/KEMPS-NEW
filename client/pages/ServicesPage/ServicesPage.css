@@ -1,0 +1,21 @@
+/* Title */
+.about h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+/* Prices */
+.price-list {
+    margin-bottom: 15px;
+}   
+
+/* Contact text */
+.contact-link {
+    color: #245c93;
+}
+  
+.contact-link-text {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1.7rem;
+}   

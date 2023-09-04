@@ -13,8 +13,10 @@ const HomePage = () => {
       <div className="row intro-explain-container">
           <h1 className='intro'>Life Jacket Servicing</h1>
           <ImageCarousel />
-            <p className='explain'>At Kemps MPS, we service life jackets as we understand the importance of keeping your 
-      life jackets in peak condition.</p>
+            <p className='explain'>Welcome to Kemps MPS, your trusted partner for life jacket servicing. We understand the
+          importance of safety on the water, and that's why we're committed to keeping your life jackets
+          in peak condition. <br/>We make sure your life jackets are ready for any adventure. 
+    </p>
       </div>
     </div>
     <div className="features">
@@ -23,7 +25,9 @@ const HomePage = () => {
           <div className="feature-card text-center p-5">
             <FontAwesomeIcon icon={faLifeRing} size="3x" className="mb-3 ring"/>
             <h4 className='iconTitle'>Safety</h4>
-            <p>When it comes to your safety on the water, there's no room for compromise. 
+            <p>Safety is our top priority. Whether you are a recreational boater, a fisherman,
+          or an adventure seeker, you can trust us to provide reliable and professional life jacket
+          servicing. 
     </p>
           </div>
         </div>
@@ -59,7 +63,8 @@ const HomePage = () => {
           <div className="feature-card text-center p-4">
             <FontAwesomeIcon icon={faShip} size="3x" className="mb-3 ship"/>
             <h4 className='iconTitle'>Experienced</h4>
-            <p >Add some text about experience.</p>
+            <p>With years of experience in the industry, our team of experts is dedicated to ensuring that
+          your life jackets meet the highest safety standards.</p>
             </div>
             </div>
       </div>

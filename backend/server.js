@@ -1,7 +1,8 @@
-const express = require('express');
-const { createTransport } = require('nodemailer');
-const { json } = require('body-parser');
-const cors = require('cors');
+import express from 'express';
+import { createTransport } from 'nodemailer';
+import { json } from 'body-parser';
+import cors from 'cors';
+const nodemailer = require('nodemailer');
 
 const app = express();
 const port = process.env.PORT || 3001;
@@ -9,18 +10,12 @@ const port = process.env.PORT || 3001;
 // Middleware
 app.use(json());
 
-// Create a Nodemailer transporter
-// const transporter = nodemailer.createTransport({
-//   service: 'gmail',
-//   auth: {
-//     user: 'missabbiewills@gmail.com',
-//   },
-// });
-const transporter = createTransport({
+const transporter = nodemailer.createTransport({
   host: 'smtp.gmail.com',
   port: 465,
   secure: true,
-  auth: { user: 'missabbiewills@gmail.com'
+  auth: { 
+    user: 'missabbiewills@gmail.com'
   },
 });
 

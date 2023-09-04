@@ -16,36 +16,55 @@
 
 /* Intro */
 .about {
-    width: 100%;
-    margin: 0 auto;
-    padding: 60px 50px 30px 50px;
-    background-color: #c5dff8b1;
-    font-family: 'Maven Pro', sans-serif;
-    font-size: 1.2rem;
-    color: #245c93;
-  }
+  width: 100%;
+  margin: 0 auto;
+  padding: 60px 70px 30px 70px;
+  background-color: #c5dff8b1;
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 1.2rem;
+  color: #245c93;
+}
   
-  .about h1 {
-    font-size: 2em;
-    margin-bottom: 10px;
-  }
+.about h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
   
-  .about p {
-    margin-bottom: 15px;
-  }
+.about p {
+  margin-bottom: 15px;
+}
+
+  /* About us text */
+.harryIntro {
+  font-size: 1.5rem !important;
+}
+
+  /* Photo */
+.photoOfHarry {
+  max-height: 18em;
+  border-radius: 20%;
+}
 
 /* Contact link */
 .contact-link {
   color: #245c93;
 }
 
+.contact-link-text {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.7rem;
+}
+
 
 /* Service text */
 .service-text {
   padding-top: 30px;
+  font-size: 1.5rem;
 }
 
 .service-text h2 {
-  text-align: center;
+  margin: 50px 0px 20px 0px;
+  font-size: 2.5rem;
 
 }
