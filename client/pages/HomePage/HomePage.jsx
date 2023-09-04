@@ -29,7 +29,7 @@ const HomePage = () => {
         </div>
         <div className="col-md-4">
           <div className="feature-card text-center p-4">
-            <FontAwesomeIcon icon={faLocationDot} size="3x" className="mb- route"/>
+            <FontAwesomeIcon icon={faLocationDot} size="3x" className="mb-3 route"/>
             <h4 className='iconTitle'>Ideal Location</h4>
             <p>Located close to Hull, East Yorkshire. We are in the optimal location for all your needs!</p>
           </div>

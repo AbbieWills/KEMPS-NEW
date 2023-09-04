@@ -1,7 +1,8 @@
 const express = require('express');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
-
+const axios = require('axios');
+require('dotenv').config();
 const app = express();
 const port = process.env.PORT || 3001;
 
@@ -9,16 +10,27 @@ const port = process.env.PORT || 3001;
 app.use(bodyParser.json());
 
 // Create a Nodemailer transporter
+// const transporter = nodemailer.createTransport({
+//   service: 'gmail',
+//   auth: {
+//     user: 'missabbiewills@gmail.com',
+//   },
+// });
 const transporter = nodemailer.createTransport({
-  service: 'gmail',
-  auth: {
-    user: 'missabbiewills@gmail.com',
+  host: 'smtp.gmail.com',
+  port: 465,
+  secure: true,
+  auth: { user: 'missabbiewills@gmail.com'
   },
 });
 
+
 // Define a route to handle form submissions
+const cors = require('cors');
 app.post('/send-email', (req, res) => {
   const { firstname, lastname, business, location, email, phone, subject, brand, type, quantity } = req.body;
+
+  app.use(cors());
 
   // Compose email message
   const mailOptions = {

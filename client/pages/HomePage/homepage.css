@@ -57,15 +57,16 @@ body {
 
 .ring {
     color: #f68249f8;
-    margin-top: -28px !important;
 }
 
 .route {
     color: #ff0000b8;
+    margin-top: 2% !important; ;
 }
 
 .calendar {
-    color: #35a4c6
+    color: #35a4c6;
+    margin-top: 4%;
 }
 
 .truck {

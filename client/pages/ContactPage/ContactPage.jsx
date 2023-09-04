@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './ContactPage.css';
+import axios from 'axios';
+
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -24,27 +26,19 @@ const ContactForm = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('/send-email', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-      const data = await response.json();
-      if (data.success) {
+      const response = await axios.post('http://localhost:3001/send-email', formData);
+      if (response.data.success) {
         alert('Email sent successfully.');
-        // Clear the form
         setFormData({
-          firstname: '',
-          lastname: '',
+          firstName: '',
+          lastName: '',
           business: '',
           location: '',
           email: '',
           phone: '',
           subject: '',
-          brand: '',
-          type: '',
+          jacketBrand: '',
+          jacketType: '',
           quantity: '',
         });
       } else {
@@ -60,11 +54,10 @@ const ContactForm = () => {
     <div className="contact-form">
       <h3 className="address">Bookings Information</h3>
       <p className="address">
-        Located in Hull East Yorkshire, UK. <br /> Contact now to book a collection slot (30 mile radius) or delivery (rest of UK). <i className="fa-solid fa-car"></i>
-        <br /> <br />
-        generalenquiries@kempsmps.com <br /> bookingenquiries@kempsmps.com<br /> <br />
+        Located in Hull East Yorkshire, UK. <br /> Contact now to book a collection slot (30 mile radius) or delivery (rest of UK). <br /> <br />
+        info@kempsmps.com <br /> <br/>
       </p>
-      <form className='form'>
+      <form className='form' onSubmit={handleSubmit}>
         <h2 className="address">Contact Form</h2>
         <div className="row">
         <div className="col-md-6">
@@ -89,7 +82,7 @@ const ContactForm = () => {
         <div className="row">
         <div className="col-md-6">
           <label htmlFor="email">Email</label>
-          <input type="text" id="email" name="email" placeholder="Your email.." required />
+          <input type="email" id="email" name="email" placeholder="Your email.." required />
           </div>
         <div className="col-md-6">
           <label htmlFor="location">Phone</label>
@@ -103,7 +96,7 @@ const ContactForm = () => {
         <div className="row">
         <div className="col-md-6">
           <label htmlFor="life-jacket-type">Type of life jacket</label>
-          <select id="life-jacket-type" name="life-jacket-type" onChange={(e) => setSelectedType(e.target.value)} required>
+          <select id="life-jacket-type" name="life-jacket-type" required>
             <option value="" disabled selected>
               Select a type
             </option>
@@ -116,7 +109,7 @@ const ContactForm = () => {
           <input type="number" id="quantity" name="quantity" placeholder="Enter quantity.." required />
           <br />
           </div>
-          </div>
+          </div>          
              <button id="submit" className="submit" type="submit" value="Submit">Submit</button>
       </form>
     </div>
