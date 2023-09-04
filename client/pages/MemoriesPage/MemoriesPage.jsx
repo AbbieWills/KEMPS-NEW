@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./MemoriesPage.css";
-import { useCredentials } from "../../contexts";
 import countriesData from "../../data/ecoData.json";
 import { usePoints } from "../../components/MemoriesComponents/PointsContext";
 import { faCamera } from "@fortawesome/free-solid-svg-icons";
@@ -16,9 +15,6 @@ const MemoriesPage = () => {
   const [showForm, setShowForm] = useState(false);
   const [country, setCountry] = useState("");
   const { points, setPoints } = usePoints();
-
-  const { token } = useCredentials();
-  const isLoggedIn = token || localStorage.getItem("token");
 
   const getUserMemories = async () => {
     const resp = await fetch("http://localhost:3000/memory");
@@ -139,11 +135,6 @@ const MemoriesPage = () => {
     setEditingIndex(-1);
   };
 
-  useEffect(() => {
-    if (isLoggedIn) {
-      getUserMemories();
-    }
-  }, []);
 
   const cancelEditing = () => {
     setEditingIndex(-1);
