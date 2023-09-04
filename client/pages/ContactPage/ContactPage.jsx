@@ -2,14 +2,57 @@ import React, { useState } from 'react';
 import './ContactPage.css';
 
 const ContactForm = () => {
-  const [selectedBrand, setSelectedBrand] = useState('');
-  const [selectedType, setSelectedType] = useState('');
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    business: '',
+    location: '',
+    email: '',
+    phone: '',
+    subject: '',
+    jacketBrand: '',
+    jacketType: '',
+    quantity: '',
+  });
 
-  const toggleOtherInput = (inputType, selectValue) => {
-    if (selectValue === 'other') {
-      return true;
-    } else {
-      return false;
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch('/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+      const data = await response.json();
+      if (data.success) {
+        alert('Email sent successfully.');
+        // Clear the form
+        setFormData({
+          firstname: '',
+          lastname: '',
+          business: '',
+          location: '',
+          email: '',
+          phone: '',
+          subject: '',
+          brand: '',
+          type: '',
+          quantity: '',
+        });
+      } else {
+        alert('Failed to send email. Please try again later.');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert('An error occurred while sending the email. Please try again later.');
     }
   };
 

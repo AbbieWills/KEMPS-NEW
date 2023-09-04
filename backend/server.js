@@ -1,54 +1,56 @@
 const express = require('express');
-const axios = require('axios');
+const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
-const cors = require('cors');
 
 const app = express();
-const PORT = process.env.PORT || 5001;
+const port = process.env.PORT || 3001;
 
-
-
-app.use(cors());
+// Middleware
 app.use(bodyParser.json());
 
-app.post('/get_eco_friendly_transportation', async (req, res) => {
-  const { start_destination, end_destination } = req.body;
-
-  try {
-    const response = await axios.post(
-      'https://api.openai.com/v1/chat/completions',
-      {
-        model: 'gpt-3.5-turbo',
-        messages: [
-          {
-            role: 'system',
-            content:
-              'You are a helpful assistant that provides travel suggestions and carbon emissions calculations.',
-          },
-          {
-            role: 'user',
-            content: `Suggest eco-friendly travel options from ${start_destination} to ${end_destination}.`,
-          },
-        ],
-      },
-      {
-        headers: {
-          Authorization: `Bearer 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`,
-        },
-      }
-    );
-
-    const suggestion = response.data.choices[0].message.content;
-    const totalCarbonEmission = 'Estimated carbon emissions: ...';
-
-    res.json({ suggestion, totalCarbonEmission });
-  } catch (error) {
-    console.error('Error fetching suggestion or carbon emissions:', error);
-    res.status(500).json({ error: 'An error occurred.' });
-  }
+// Create a Nodemailer transporter
+const transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: 'missabbiewills@gmail.com',
+  },
 });
 
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+// Define a route to handle form submissions
+app.post('/send-email', (req, res) => {
+  const { firstname, lastname, business, location, email, phone, subject, brand, type, quantity } = req.body;
+
+  // Compose email message
+  const mailOptions = {
+    from: email,
+    to: 'missabbiewills@gmail.com',
+    subject: subject,
+    html: `
+      <p>First Name: ${firstname}</p>
+      <p>Last Name: ${lastname}</p>
+      <p>Business: ${business}</p>
+      <p>Location: ${location}</p>
+      <p>Email: ${email}</p>
+      <p>Phone: ${phone}</p>
+      <p>Brand of Life Jacket: ${brand}</p>
+      <p>Type of Life Jacket: ${type}</p>
+      <p>Quantity of Life Jackets: ${quantity}</p>
+    `,
+  };
+
+  // Send the email
+  transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      console.error(error);
+      res.status(500).json({ success: false, message: 'Failed to send email.' });
+    } else {
+      console.log('Email sent: ' + info.response);
+      res.status(200).json({ success: true, message: 'Email sent successfully.' });
+    }
+  });
 });
 
+// Start the server
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});

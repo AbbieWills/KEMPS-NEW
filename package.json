@@ -1,5 +1,5 @@
 {
-  "name": "americanpy",
+  "name": "kemps",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,6 +13,7 @@
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
     "express": "^4.18.2",
+    "nodemailer": "^6.9.4",
     "react-modal": "^3.16.1"
   }
 }
