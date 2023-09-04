@@ -24,14 +24,14 @@ const NavbarComponent = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <NavLink className="nav-link" activeclassname="active" to="/">
+              <NavLink className="nav-link" activeClassName="active" to="/">
                 Home
               </NavLink>
             </li>
             <li className="nav-item">
             <NavLink
                 className="nav-link"
-                activeclassname="active"
+                activeClassName="active"
                 to="/about"
               >
                 About
@@ -40,7 +40,7 @@ const NavbarComponent = () => {
               <li className="nav-item">
             <NavLink
                 className="nav-link"
-                activeclassname="active"
+                activeClassName="active"
                 to="/contact"
               >
                 Contact

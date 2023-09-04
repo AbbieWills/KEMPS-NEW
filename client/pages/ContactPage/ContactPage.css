@@ -3,6 +3,8 @@
   align-items: center;
   padding: 30px;
   font-family: 'Maven Pro', sans-serif;
+  color: #245c93;
+  font-size: 1.1rem;
 }
 
 .address {
@@ -24,21 +26,20 @@ margin-bottom: 20px;
 
 .form {
   width: 88%;
-  padding: 50px;
+  padding: 50px 70px;
   border-radius: 10px;
-  background-color: #c5dff8b1;
+  background-color: #a0cdf7;
   text-align: center;
   margin: 0 auto;
-  color: #245c93;
-  font-family: 'Maven Pro', sans-serif;
   margin-bottom: 20px;
+  border: 1.5px solid #245c93;
 
 }
 
 
 .form label {
   font-weight: bold;
-  margin-bottom: 5px;
+  margin-top: 10px;
 
 }
 
@@ -79,4 +80,5 @@ margin-bottom: 20px;
 
 
 .form button:hover {
-background-color: #245c93;}
+background-color: #245c93;
+}

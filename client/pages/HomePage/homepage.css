@@ -1,11 +1,10 @@
 /* Main background colour */
 body {
-    background-color: #add1f6 !important;
+    background-color: #c5dff8 !important;
 }
 
 /* Title text */
 .intro {
-    color: #0081C9;
     padding: 30px 50px 70px 50px;
     width: 100%;
     margin: 0 auto;
@@ -13,9 +12,10 @@ body {
     text-align: center;
     font-size: 2.9rem;
     margin-bottom: -2rem;
-    background-color: #eff2f5c3;
+    /* background-color: #eff2f5c3; */
     -webkit-text-fill-color: #0081C9; 
     -webkit-text-stroke: 0.7px #86E5FF; 
+    background-color: #ffffff;
 }
 
 /* Intro text */
@@ -26,9 +26,9 @@ body {
     font-family: 'Maven Pro', sans-serif;
     color: #366491;
     text-align: center;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     width: 100% !important;
-    margin-top: -5rem !important;
+    margin-top: -9vh !important;
   }
   
 

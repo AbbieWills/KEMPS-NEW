@@ -11,22 +11,24 @@ html {
 }
 
 .nav-link {
-    color: #0081C9 !important;
-    font-size: 1.4rem;
-    margin-right: 20px;
+    color: #245c93 !important;
+    font-size: 1.6rem;
     padding: 20px;
-    background-color: #41b4f3;
+    background-color: #72b3f4;
     font-family: 'Maven Pro', sans-serif;
+    margin: 0 -10px 0 80px;
+
 }
+
 .navbar {
-    background-color: #41b4f3;
+    background-color: #72b3f4;
     height: auto;
     z-index: 1000;
     padding: 10px 0;
 }
 
 .navbar-container {
-    background-color: #7DB4D8;
+    background-color: #72b3f4;
     font-size: 1.3rem;
     display: flex;
     align-items: center;
@@ -49,20 +51,20 @@ html {
 .navbar-brand {
     color: #fff !important;
     font-family: 'Maven Pro', sans-serif;
-    font-size: 2.2rem;
+    font-size: 2rem;
     margin-left: -50px;
+    padding: 15px;
 }
 
 .navbar-brand:hover {
-    color: #0081C9 !important;
-
+    color: #245c93 !important;
 }
 
 
 /* logo */
 .logo {
-    width: 8%;
-    height: 8%;
+    width: 7%;
+    height: 7%;
     transition: filer 0.3 ease;}
 
 .logo:hover {
