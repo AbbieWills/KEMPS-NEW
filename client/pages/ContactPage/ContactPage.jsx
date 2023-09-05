@@ -76,7 +76,7 @@ const ContactForm = () => {
           </div>
         <div className="col-md-6">
           <label htmlFor="business">Location</label>
-          <input type="text" id="address" name="location" placeholder="Your address.." required />
+          <input type="text" id="location" name="location" placeholder="Your address.." required />
           </div>
           </div>
         <div className="row">
@@ -96,8 +96,8 @@ const ContactForm = () => {
         <div className="row">
         <div className="col-md-6">
           <label htmlFor="life-jacket-type">Type of life jacket</label>
-          <select id="life-jacket-type" name="type" required>
-            <option value="" disabled selected>
+          <select id="life-jacket-type" name="type" required defaultValue={""}>
+            <option value="" disabled>
               Select a type
             </option>
             <option value="solas">Solas</option>
