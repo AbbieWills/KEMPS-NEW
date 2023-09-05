@@ -8,6 +8,8 @@ const port = process.env.PORT || 3002;
 
 // Middleware
 app.use(bodyParser.json());
+app.use(express.static('public'));
+
 // Enable CORS
 app.use(cors());
 
@@ -20,7 +22,9 @@ const transporter = createTransport({
   },
 });
 
-
+app.get('/', (req, res) => {
+  res.send('Welcome to the Express server.');
+});
 
 
 // Define a route to handle form submissions
