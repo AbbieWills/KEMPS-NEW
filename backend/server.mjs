@@ -1,18 +1,23 @@
-const express = require('express');
-const { createTransport } = require('nodemailer');
-const bodyParser = require('body-parser');
-const nodemailer = require('nodemailer');
-const cors = require('cors');
+// const express = require('express');
+// const { createTransport } = require('nodemailer');
+// const bodyParser = require('body-parser');
+// const nodemailer = require('nodemailer');
+// const cors = require('cors');
+
+import express from 'express';
+import { createTransport } from 'nodemailer';
+import bodyParser from 'body-parser';
+import cors from 'cors';
 
 const app = express();
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 3002;
 
 // Middleware
 app.use(bodyParser.json());
 // Enable CORS
 app.use(cors());
 
-const transporter = nodemailer.createTransport({
+const transporter = createTransport({
   host: 'smtp.gmail.com',
   port: 465,
   secure: true,
