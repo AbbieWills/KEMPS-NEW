@@ -1,8 +1,4 @@
-// const express = require('express');
-// const { createTransport } = require('nodemailer');
-// const bodyParser = require('body-parser');
-// const nodemailer = require('nodemailer');
-// const cors = require('cors');
+#!/usr/bin/env node
 
 import express from 'express';
 import { createTransport } from 'nodemailer';
