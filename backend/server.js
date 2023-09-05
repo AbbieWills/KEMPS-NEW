@@ -1,14 +1,16 @@
-import express from 'express';
-import { createTransport } from 'nodemailer';
-import { json } from 'body-parser';
-import cors from 'cors';
+const express = require('express');
+const { createTransport } = require('nodemailer');
+const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
+const cors = require('cors');
 
 const app = express();
 const port = process.env.PORT || 3001;
 
 // Middleware
-app.use(json());
+app.use(bodyParser.json());
+// Enable CORS
+app.use(cors());
 
 const transporter = nodemailer.createTransport({
   host: 'smtp.gmail.com',
@@ -19,8 +21,7 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-// Enable CORS
-app.use(cors());
+
 
 
 // Define a route to handle form submissions

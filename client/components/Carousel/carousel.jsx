@@ -19,10 +19,10 @@ const ImageCarousel = () => {
       className="full-width-carousel"
     >
       <div>
-        <img className='carousel-img' src="https://images.unsplash.com/photo-1561623497-3ab314e8f8a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="people_throwing" />
+        <img className='carousel-img' src="https://images.unsplash.com/photo-1465171550359-133629cbded9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2048&q=80" alt="blue_background_jacket" />
       </div>
       <div>
-        <img className='carousel-img' src="https://images.unsplash.com/photo-1465171550359-133629cbded9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2048&q=80" alt="blue_background_jacket" />
+        <img className='carousel-img' src="https://images.unsplash.com/photo-1561623497-3ab314e8f8a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="people_throwing" />
       </div>
       <div>
         <img  className='carousel-img' src="https://images.unsplash.com/photo-1520627226741-957359a3caab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="jackets_on_rail" />
