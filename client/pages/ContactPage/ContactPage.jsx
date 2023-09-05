@@ -76,7 +76,7 @@ const ContactForm = () => {
           </div>
         <div className="col-md-6">
           <label htmlFor="business">Location</label>
-          <input type="text" id="location" name="location" placeholder="Your location.." required />
+          <input type="text" id="address" name="location" placeholder="Your address.." required />
           </div>
           </div>
         <div className="row">
