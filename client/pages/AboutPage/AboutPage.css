@@ -32,17 +32,40 @@
   
 .about p {
   margin-bottom: 15px;
+  text-align: justify;
+
 }
 
   /* About us text */
 .harryIntro {
   font-size: 1.5rem !important;
+
 }
 
   /* Photo */
 .photoOfHarry {
   max-height: 18em;
   border-radius: 20%;
+}
+
+/* Service text */
+.why-choose {
+  background-color: #eff2f5de;
+  padding: 15px 37px;
+  border-radius: 10px;
+  margin-top: 15px;
+  text-align: justify;
+  
+}
+
+.service-text {
+  padding-top: 30px;
+  font-size: 1.3rem;
+}
+
+.service-text h2 {
+  margin: 20px 0px 20px 0px;
+  font-size: 2.5rem;
 }
 
 /* Contact link */
@@ -57,14 +80,4 @@
 }
 
 
-/* Service text */
-.service-text {
-  padding-top: 30px;
-  font-size: 1.5rem;
-}
 
-.service-text h2 {
-  margin: 50px 0px 20px 0px;
-  font-size: 2.5rem;
-
-}

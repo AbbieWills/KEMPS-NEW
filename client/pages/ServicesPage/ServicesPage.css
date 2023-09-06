@@ -1,12 +1,83 @@
 /* Title */
-.about h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
+.servicing-title {
+    font-size: 3rem !important;
+    margin-bottom: 30px !important;
+} 
+
+/* Right jacket text */
+.right-jacket-text {
+    font-size: 1.3rem;
+    margin-bottom: 30px !important;
 }
 
+.sizing-guidelines {
+    font-weight: bold !important;
+    margin-bottom: -2px !important;
+}
+
+/* Life Jacket Levels */
+.levels-section {
+    background-color: #eff2f5de;
+    border-radius: 10px;
+    width: 100% !important;
+    margin: 0 auto !important;
+    margin-top: 40px !important;
+}
+
+.levels-title{
+    text-align: center;
+    margin-top: 30px !important;
+    margin-bottom: -10px;
+
+}
+
+.levels {
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding: 20px 20px 0 20px;
+}
+
+.levels-text {
+    font-size: 1.2rem;
+    padding: 0 20px 20px 20px;
+
+}
+
+.lj-photo{
+    max-width: 200px;
+    max-height: 300px;
+    margin: 0 auto;
+    display: block;
+    margin-top: -14px;
+    margin-bottom: 15px;
+}
+
+.col-lg-4 {
+    border: 2px solid #245c93;
+    border-radius: 10px;
+    padding: 10px !important;
+    width: 30% !important;
+    margin: 50px auto !important;
+    /* Make this responsive */
+}
+
+.onefive {
+    margin: 50px -10px !important;
+}
+
+
 /* Prices */
+.pricing {
+    /* background-color: #eff2f5de; */
+    border-radius: 10px;
+    padding: 20px;
+    width: 100% !important;
+}
+
 .price-list {
     margin-bottom: 15px;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 1.4rem;
 }   
 
 /* Contact text */
@@ -15,7 +86,7 @@
 }
   
 .contact-link-text {
-    text-align: center;
+    text-align: center !important;
     margin-top: 40px;
     font-size: 1.7rem;
-}   
+}  

@@ -1,6 +1,5 @@
 import express from 'express';
 import { createTransport } from 'nodemailer';
-import bodyParser from 'body-parser';
 import cors from 'cors';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -11,10 +10,10 @@ const __dirname = dirname(__filename);
 
 
 const app = express();
-const port = process.env.PORT || 3002;
+const port = process.env.PORT || 5001;
 
 // Middleware
-app.use(bodyParser.json());
+app.use(express.json());
 app.use(express.static(path.join(__dirname, '/client')));
 
 
@@ -40,6 +39,7 @@ const transporter = createTransport({
 
 app.get('/', (req, res) => {
   res.send('Welcome to the Express server.');
+  console.log('Welcome to the Express server.');
 });
 
 // Define a route to handle form submissions

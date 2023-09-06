@@ -26,7 +26,12 @@ const ContactForm = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('/send-email', formData);
+      const response = await axios.post('/send-email', formData, {
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+      console.log('Axios request successfull');
       if (response.data.success) {
         alert('Email sent successfully.');
         setFormData({
@@ -45,14 +50,19 @@ const ContactForm = () => {
         alert('Failed to send email. Please try again later.');
       }
     } catch (error) {
-      console.error('Error:', error);
+      console.error('Axios Error:', error);
       alert('An error occurred while sending the email. Please try again later.');
+      if (error.response) {
+        console.error('Response Data:', error.response.data);
+        console.error('Response Status:', error.response.status);
+        console.error('Response Headers:', error.response.headers);
+      }
     }
   };
 
   return (
     <div className="contact-form">
-      <h3 className="address">Bookings Information</h3>
+      <h1 className="address">Bookings Information</h1>
       <p className="address">
         Located in Hull East Yorkshire, UK. <br /> Contact now to book a collection slot (30 mile radius) or delivery (rest of UK). <br /> <br />
         info@kempsmps.com <br /> <br/>
