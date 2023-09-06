@@ -5,14 +5,26 @@
 } 
 
 /* Right jacket text */
-.right-jacket-text {
+.about h2 {
+    font-size: 1.9rem !important;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.right-jacket-text, .sizing-text {
     font-size: 1.3rem;
     margin-bottom: 30px !important;
 }
 
-.sizing-guidelines {
+.sizing-guidelines, .understanding {
     font-weight: bold !important;
     margin-bottom: -2px !important;
+    margin-top: -15px;
+    font-size: 1.5rem !important;
+}
+
+.understanding {
+    margin-top: 20px !important;
 }
 
 /* Life Jacket Levels */
@@ -27,7 +39,6 @@
 .levels-title{
     text-align: center;
     margin-top: 30px !important;
-    margin-bottom: -10px;
 
 }
 
@@ -52,18 +63,19 @@
     margin-bottom: 15px;
 }
 
-.col-lg-4 {
+.individual {
     border: 2px solid #245c93;
     border-radius: 10px;
     padding: 10px !important;
+    margin: 30px auto !important;
     width: 30% !important;
-    margin: 50px auto !important;
-    /* Make this responsive */
 }
-
+    
+    /* Add a more specific selector */
 .onefive {
     margin: 50px -10px !important;
 }
+
 
 
 /* Prices */
@@ -90,3 +102,47 @@
     margin-top: 40px;
     font-size: 1.7rem;
 }  
+
+
+@media (max-width: 1200px) {
+    .individual {
+      width: 90% !important;
+      margin: 30px auto !important;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .servicing-title {
+        font-size: 2.5rem !important;
+    }
+    .about h2 {
+        font-size: 1.8rem !important;
+        font-weight: bold;
+        margin-bottom: 12px;
+    }
+    .right-jacket-text, .sizing-text {
+        font-size: 1.3rem;
+        text-align: left !important;
+    }
+    .understanding, .sizing-guidelines {
+        text-align: left !important;
+        font-size: 1.4rem !important;
+
+    }
+    .individual {
+      width: 90% !important;
+      margin: 15px auto !important;
+    }
+    .price-list {
+        font-size: 1.3rem !important;
+        text-align: left !important;
+    }
+    .pricing h2 {
+        font-size: 1.7rem !important;
+        text-align: left !important;
+    }
+    .contact-link-text {
+        font-size: 1.5rem !important;
+        margin-top: -5px;
+    }
+  }

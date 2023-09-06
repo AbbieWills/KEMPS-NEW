@@ -87,14 +87,28 @@ body {
 }
 
 
+@media (max-width: 2000px) {
+    .explain {
+        padding: 15px;
+    }
+}
+
+
 @media (max-width: 1150px) {
     .intro {
         font-size: 2rem;
     }
     .explain {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
+        padding: 20px;
     }
     .features {
         font-size: 1.2rem;
+    }
+    .mb-3 {
+        font-size: 2.5rem;
+    }
+    .iconTitle {
+        font-size: 1.6rem;
     }
 }

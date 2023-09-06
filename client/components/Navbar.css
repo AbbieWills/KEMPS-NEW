@@ -74,6 +74,46 @@ html {
 
 
 /* Media Queries */
+@media (max-width: 1000px) {
+    .navbar-brand {
+        font-size: 1.4rem !important;
+        margin: 0 auto;
+    }
+    .nav-link {
+        font-size: 1.3rem !important;
+        margin-top: 10px !important;
+    }
+    .navbar-toggler{
+        margin: 10px auto !important;
+
+    }
+    .navbar-title {
+        font-size: 1.4rem !important;
+        margin: 0 auto;
+    }
+
+
+}
+
+@media (max-width: 1350px) {
+    .navbar-brand {
+        font-size: 1.7rem;
+    }
+
+    .navbar-title {
+        font-size: 1.7rem;
+    }
+
+    .nav-keys {
+        font-size: 1rem;
+    }
+    .nav-link {
+        font-size: 1.5rem;
+        margin: 0 -10px 0 40px;
+    }
+}
+
+
 @media (max-width: 1150px) {
     .navbar-content {
         flex-direction: column;

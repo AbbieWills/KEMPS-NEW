@@ -37,30 +37,28 @@
 }
 
   /* About us text */
-.harryIntro {
-  font-size: 1.5rem !important;
-
+.harry-intro {
+  font-size: 1.4rem !important;
+  padding-top: 20px !important;
+  margin-bottom: 50px !important;
 }
 
   /* Photo */
 .photoOfHarry {
   max-height: 18em;
+  max-width: 20em !important;
   border-radius: 20%;
+  margin: 0 auto;
 }
 
 /* Service text */
-.why-choose {
+.why-choose{
   background-color: #eff2f5de;
   padding: 15px 37px;
   border-radius: 10px;
   margin-top: 15px;
   text-align: justify;
   
-}
-
-.service-text {
-  padding-top: 30px;
-  font-size: 1.3rem;
 }
 
 .service-text h2 {
@@ -80,4 +78,27 @@
 }
 
 
+@media (max-width: 2584) {
+  .photoOfHarry {
+    height: 13em !important;
+  };
+}
 
+
+@media (max-width: 690px) {
+  .about h1 {
+    font-size: 2.5rem;
+  }
+  .harry-intro {
+    font-size: 1.2rem !important;
+    text-align: left !important;
+  }
+  .why-choose p {
+    text-align: left;
+    font-size: 1.2rem;
+  }
+  .why-choose h2 {
+    font-size: 2rem;
+    text-align: left;
+  }
+}
