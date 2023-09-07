@@ -1,6 +1,7 @@
 import express from 'express';
 import { createTransport } from 'nodemailer';
 import { google } from 'googleapis';
+import cors from 'cors';
 
 const CLIENT_ID = '1000397497067-f88outj6r13hf9vd7a8e187busav4gr6.apps.googleusercontent.com';
 const CLEINT_SECRET = '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';
@@ -8,6 +9,9 @@ const REDIRECT_URI = 'https://developers.google.com/oauthplayground';
 const REFRESH_TOKEN = '1//0450NonHmD337CgYIARAAGAQSNwF-L9IrPNmj3mOIo-kRZJKmMYhWneWh7c7Q-Yn9wgfZLF_EdASzYlWnu8bnLniK0lXaCt6KY9E';
 
 const app = express();
+app.use(cors());
+
+
 
 const oAuth2Client = new google.auth.OAuth2(
   CLIENT_ID,
