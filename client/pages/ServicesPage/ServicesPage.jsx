@@ -10,7 +10,16 @@ const ServicesPage = () => {
   return (
     <>
       <div className="about">
-        <h1 className='servicing-title'>Servicing and Pricing</h1>
+        <h1 className='servicing-title'>Pricing and Servicing</h1>
+        <p className='pricing-intro'>At KempsMPS, we understand that quality service should also come with affordability. That's why we take pride in offering competitive pricing for all our life jacket servicing and maintenance services.</p>
+        <div className='pricing'>
+          <h2>Pricing</h2>
+          <div className='price-list'>
+              <strong>For Solas approved lifejacket service:</strong> £20 (excluding the cost of any replaceable parts) <br/>
+              <strong>For Non-Solas lifejacket service:</strong> £15 (excluding the cost of any replaceable parts)
+              <p className='repairs-text'>Please <a href='/contact'>contact us</a> for a quote regarding repairs</p>
+          </div>
+        </div>
         <h2>Finding The Right Jacket For You </h2>
         <p className='right-jacket-text'>Determining the ideal lifejacket for your needs requires thoughtful consideration. Below is a helpful guide to assist you in making the right selection. </p>
           <p className='sizing-guidelines'> Sizing Guidelines: </p>
@@ -38,20 +47,7 @@ const ServicesPage = () => {
             This life jacket is intended for rugged offshore conditions. Similar to the Level 150, it can right an unconscious person, even when wearing heavy clothing such as immersion suits.</p> <img className='lj-photo' src={twohundredseventyfive} alt="275-lf" />
           </div>
         </div>
-       <div className='pricing'>
-          <h2>Pricing</h2>
-          <ul className='price-list'>
-            <li>
-              <strong>Solas approved lifejacket service:</strong> £20 (excluding the cost of any replaceable parts)
-            </li>
-            <li>
-              <strong>Non-Solas lifejacket service:</strong> £15 (excluding the cost of any replaceable parts)
-            </li>
-          </ul>
-        </div>
-
-        <p className='contact-link-text'> <a className='contact-link' href='/contact'>Contact us</a> today to learn more about our services and how we can help you stay safe on the water.</p>
-    
+        <p className='contact-link-text'> <a href='/contact'>Contact us</a> today to learn more about our services and how we can help you stay safe on the water.</p>
       </div>
 
     </>

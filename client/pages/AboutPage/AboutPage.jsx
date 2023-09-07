@@ -11,11 +11,10 @@ const AboutPage = () => {
       </div>
       <div className="about">
         <h1>About Us</h1>
-        <p> </p>
         <div className='service-text'>
           <div className='row'>
-          <p className='col-md-12 col-sm-12 col-lg-9 harry-intro'> Hello, I am Harry, a 23 year old seasoned Navigation Officer currently serving on Oil tankers, and proudly assuming the role of Director at Kemps Maritime Professional Services (KempsMPS). <br/><br/> My unwavering commitment revolves around the paramount importance of safety and its continuous enhancement within the maritime sector. Consequently, I have chosen to devote my time to ensuring that all life jackets serviced through KempsMPS adhere to the most stringent safety standards.
-          <br/><br/> Our approach hinges on the pillars of quality assurance, comprehensive staff training, and the utilization of cutting-edge servicing equipment. </p> <img className="col-md-10 col-sm-12 col-lg-3 photoOfHarry" src='https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png' alt='PhotoOfHarry'></img></div>
+          <p className='col-sm-12 col-md-12 col-lg-9 harry-intro'> Hello, I am Harry, a 23 year old seasoned Navigation Officer currently serving on Oil tankers, and proudly assuming the role of Director at Kemps Maritime Professional Services (KempsMPS). <br/><br/> My unwavering commitment revolves around the paramount importance of safety and its continuous enhancement within the maritime sector. Consequently, I have chosen to devote my time to ensuring that all life jackets serviced through KempsMPS adhere to the most stringent safety standards.
+          <br/><br/> Our approach hinges on the pillars of quality assurance, comprehensive staff training, and the utilization of cutting-edge servicing equipment. </p> <img className="photoOfHarry" src='https://kcil.org.uk/wp-content/uploads/2020/01/awaiting-image-1-e1651572089627.jpg' alt='PhotoOfHarry'></img></div>
           <div className='why-choose'>
         <h2>Why Choose KempsMPS?</h2>
           <p>

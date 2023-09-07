@@ -15,8 +15,8 @@
 }
 
 .contact-form h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
+  font-size: 3rem !important;
+  margin-bottom: 30px !important;
 }
 
 .contact-form p {
