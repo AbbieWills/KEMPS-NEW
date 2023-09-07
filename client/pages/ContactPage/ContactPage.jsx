@@ -106,7 +106,7 @@ const ContactForm = () => {
         <div className="row">
         <div className="col-md-6">
           <label htmlFor="life-jacket-type">Type of life jacket</label>
-          <select id="life-jacket-type" name="type" required defaultValue={""}>
+          <select id="life-jacket-type" name="type" required value={formData.type} onChange={handleInputChange}>
             <option value="" disabled>
               Select a type
             </option>
