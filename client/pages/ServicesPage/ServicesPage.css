@@ -185,4 +185,89 @@
         font-size: 1.1rem !important;
         text-align: center !important;
     }
+    .levels-section {
+        padding: 15px;
+        margin: 0 auto !important;
+        width: 100% !important;
+    }
+    .about {
+        width: 550px !important;
+        margin-left: -30px;
+    }
 }
+
+@media (max-width: 450px) {
+    .lj-photo {
+        max-width: 150px;
+        max-height: 200px;
+    }
+    .levels-text {
+        font-size: 1.1rem !important;
+        text-align: center !important;
+    }
+    .levels-section {
+        padding: 15px;
+        margin: 0 auto !important;
+        width: 100% !important;
+    }
+    .about {
+        width: 530px !important;
+        margin-left: -50px;
+    }
+}
+
+@media (max-width: 420px) {
+    .lj-photo {
+        max-width: 150px;
+        max-height: 200px;
+    }
+    .levels-text {
+        font-size: 1.1rem !important;
+        text-align: center !important;
+    }
+    .levels-section {
+        padding: 15px;
+        margin: 0 auto !important;
+        width: 100% !important;
+    }
+    .about {
+        width: 480px !important;
+        margin-left: -40px;
+    }
+}
+
+@media (max-width: 375px) {
+    .lj-photo {
+        max-width: 150px;
+        max-height: 200px;
+    }
+    .levels-text {
+        font-size: 1.1rem !important;
+        text-align: center !important;
+    }
+    .levels-section {
+        padding: 15px;
+        margin: 0 auto !important;
+        width: 100% !important;
+    }
+    .about {
+        width: 450px !important;
+        margin-left: -45px;
+    }
+}
+
+@media (max-width: 345px) {
+    .levels-text {
+        font-size: 0.9rem !important;
+        text-align: center !important;
+    }
+    .about {
+        width: 440px !important;
+        margin-left: -47px;
+        font-size: 0.9px !important;
+    }
+    .pricing-intro {
+        font-size: 1.3rem !important;
+    }
+}
+

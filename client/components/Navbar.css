@@ -74,10 +74,19 @@ html {
 
 
 /* Media Queries */
-@media (max-width: 1000px) {
+@media (max-width: 480px) {
     .navbar-brand {
-        font-size: 1.4rem !important;
-        margin: 0 auto;
+        font-size: 0.9rem !important;
+        margin: 0 auto !important;
+    }
+
+}
+
+
+@media (min-width:481px) and (max-width: 1000px) {
+    .navbar-brand {
+        font-size: 1.3rem !important;
+        margin: 0 auto !important;
     }
     .nav-link {
         font-size: 1.3rem !important;
@@ -85,10 +94,7 @@ html {
     }
     .navbar-toggler{
         margin: 10px auto !important;
-
         }
-
-
 }
 
 @media (max-width: 1350px) {
