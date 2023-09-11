@@ -1,14 +1,10 @@
 import React from 'react';
 import './AboutPage.css';
-import waves from './Wave.svg'
 
 const AboutPage = () => {
 
   return (
     <>
-        <div className='background'>
-      <img className='waves' src={waves} alt="Waves" />
-      </div>
       <div className="about">
         <h1>About Us</h1>
         <div className='service-text'>
