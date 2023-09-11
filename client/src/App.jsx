@@ -4,7 +4,8 @@ import {
   HomePage,
   AboutPage,
   ContactPage,
-  ServicesPage
+  ServicesPage,
+  NotFoundPage
 } from "../pages";
 import NavbarComponent from ".././components/Navbar";
 import Footer from ".././components/Footer/Footer";
@@ -19,6 +20,7 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/services" element={<ServicesPage />} />
+        <Route path="*" element={<NotFoundPage/>} />
       </Routes>
         <Footer />
     </>
