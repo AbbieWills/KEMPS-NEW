@@ -105,14 +105,18 @@
   .harry-intro {
     width: 100% !important;
     margin: 0 auto !important;
+    margin-left: -27px !important;
+
   }
 }
 
 @media (max-width: 600px) {
   .harry-intro {
     text-align: center !important;
-    margin: 0 auto;  
     }
+  .about h1 {
+    padding-left: 13px !important;
+  }
 }
 
 

@@ -43,9 +43,9 @@ const ContactForm = () => {
 
   return (
     <div className="contact-form">
-      <h1 className="address">Bookings Information</h1>
+      <h1 className="address">Contact us</h1>
       <p className="address">
-        Located in Hull East Yorkshire, UK. <br /> Contact now to book a collection slot (30-mile radius) or delivery (rest of UK). <br /> <br />
+        Located in Hull, East Yorkshire, UK. <br /> Contact now to book a collection slot (30-mile radius) or delivery (rest of UK). <br /> <br />
         enquiries@kempsmps.com <br /> <br/>
       </p>
       <form className='form' onSubmit={composeMailTo}>
