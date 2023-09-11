@@ -34,15 +34,15 @@
 }
 
 /* Right jacket text */
-.about h2 {
-    font-size: 1.9rem !important;
+.pricing-heading {
+    font-size: 1.9rem;
     font-weight: bold;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 .right-jacket-text, .sizing-text {
     font-size: 1.3rem;
-    margin-bottom: 30px !important;
+    margin-bottom: 40px !important;
 }
 
 .sizing-guidelines, .understanding {
@@ -86,10 +86,11 @@
     max-width: 200px;
     max-height: 300px;
     margin: 0 auto;
-    display: block;
+    display: block !important;
     margin-top: -14px;
     margin-bottom: 15px;
 }
+
 
 .individual {
     border: 2px solid #245c93;
@@ -97,11 +98,6 @@
     padding: 10px !important;
     margin: 30px auto !important;
     width: 30% !important;
-}
-    
-    /* Add a more specific selector */
-.onefive {
-    margin: 50px -10px !important;
 }
 
   
