@@ -1,5 +1,6 @@
 import React from 'react';
 import './AboutPage.css';
+import harryPhoto from './harry-photo.jpg';
 
 const AboutPage = () => {
 
@@ -10,7 +11,7 @@ const AboutPage = () => {
         <div className='service-text'>
           <div className='row'>
           <p className='col-sm-12 col-md-12 col-lg-9 harry-intro'> Hello, I am Harry, a 23 year old navigation officer currently serving on oil tankers, and proudly assuming the role of Director at Kemps Maritime Professional Services (KempsMPS). <br/><br/> My unwavering commitment revolves around the paramount importance of safety and its continuous enhancement within the maritime sector. Consequently, I have chosen to devote my time to ensuring that all life jackets serviced through KempsMPS adhere to the most stringent safety standards.
-          <br/><br/> Our approach hinges on the pillars of quality assurance, comprehensive staff training, and the utilization of cutting-edge servicing equipment. </p> <img className="photoOfHarry" src='https://kcil.org.uk/wp-content/uploads/2020/01/awaiting-image-1-e1651572089627.jpg' alt='PhotoOfHarry'></img></div>
+          <br/><br/> Our approach hinges on the pillars of quality assurance, comprehensive staff training, and the utilization of cutting-edge servicing equipment. </p> <img className="photoOfHarry" src={harryPhoto} alt='PhotoOfHarry'></img></div>
           <div className='why-choose'>
         <h2>Why Choose KempsMPS?</h2>
           <p>
