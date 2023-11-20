@@ -1,6 +1,6 @@
 import React from 'react';
 import './AboutPage.css';
-import harryPhoto from './harry-photo.JPG';
+import harryPhoto from './harry-photo.png';
 
 const AboutPage = () => {
 
