@@ -21,6 +21,10 @@ const HomePage = () => {
           in peak condition. <br/>We ensure your life jackets are prepared for any venture, whether it's recreational, professional, or commercial in nature.
             </p>
           </div>
+
+          <div className='chandlery'>
+            <p className='chandlery-link-text'>We also offer a Marine Chandlery service around Hull, <a href='mailto:enquiries@kempsmps.com?subject=New Chandlery Enquiry'>email us</a> to learn more</p>
+          </div>
       </div>
 
     <div className="features">

@@ -39,7 +39,21 @@ body {
     text-align: center;
     font-size: 1.6rem;
     margin-top: -9vh !important;
-    
+}
+
+/* Chandlery text */
+
+.chandlery {
+    border: #245c93 2px dashed;
+    margin-top: 7px !important;
+}
+
+.chandlery-link-text {
+    text-align: center !important;
+    margin: 20px;
+    font-size: 1.7rem;
+    color: #245c93;
+    font-family: 'Maven Pro', sans-serif;
 }
   
 
@@ -60,17 +74,15 @@ body {
     font-size: 3.5rem;
 }
 
-
 .contact-link-text {
     text-align: center !important;
     margin: 40px;
     font-size: 1.7rem;
     color: #245c93;
     font-family: 'Maven Pro', sans-serif;
-
 } 
 
-.contact-link-text a {
+.contact-link-text a, .chandlery-link-text a {
     color: #245c93;
 
 }
