@@ -10,7 +10,7 @@ const AboutPage = () => {
         <h1>About Us</h1>
         <div className='service-text'>
           <div className='row'>
-          <p className='col-sm-12 col-md-12 col-lg-9 harry-intro'> Hello, I am Harry, a 23 year old navigation officer currently serving on oil tankers, and proudly assuming the role of Director at Kemps Maritime Professional Services (KempsMPS). <br/><br/> My unwavering commitment revolves around the paramount importance of safety and its continuous enhancement within the maritime sector. Consequently, I have chosen to devote my time to ensuring that all life jackets serviced through KempsMPS adhere to the most stringent safety standards.
+          <p className='col-sm-12 col-md-12 col-lg-9 harry-intro'> Hello, I am Harry, a navigation officer currently serving on oil tankers, and proudly assuming the role of Director at Kemps Maritime Professional Services (KempsMPS). <br/><br/> My unwavering commitment revolves around the paramount importance of safety and its continuous enhancement within the maritime sector. Consequently, I have chosen to devote my time to ensuring that all life jackets serviced through KempsMPS adhere to the most stringent safety standards.
           <br/><br/> Our approach hinges on the pillars of quality assurance, comprehensive staff training, and the utilisation of cutting-edge servicing equipment. </p> <img className="photoOfHarry" src={harryPhoto} alt='PhotoOfHarry'></img></div>
           <div className='why-choose'>
         <h2>Why Choose KempsMPS?</h2>
