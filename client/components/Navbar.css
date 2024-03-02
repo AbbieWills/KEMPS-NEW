@@ -63,8 +63,8 @@ html {
 
 /* logo */
 .logo {
-    width: 7%;
-    height: 7%;
+    width: 7% !important;
+    height: 7% !important;
     transition: filer 0.3 ease;}
 
 .logo:hover {
