@@ -9,10 +9,8 @@ const ContactForm = () => {
     location: '',
     email: '',
     phone: '',
-    subject: '',
-    brand: '',
     type: '',
-    quantity: '',
+    subject: '',
   });
 
   const handleInputChange = (e) => {
@@ -21,19 +19,17 @@ const ContactForm = () => {
   };
 
   const composeMailTo = () => {
-    const { firstname, lastname, business, location, email, phone, subject, brand, type, quantity } = formData;
+    const { firstname, lastname, business, location, email, phone, subject, type } = formData;
 
     // Compose the mailto URL
-    const mailto = `mailto:enquiries@kempsmps.com?subject=${encodeURIComponent("New Life Jacket Enquiry")}&body=
+    const mailto = `mailto:enquiries@kempsmps.com?subject=${encodeURIComponent("New Service Enquiry")}&body=
     First Name: ${encodeURIComponent(firstname)}
     Last Name: ${encodeURIComponent(lastname)}
     Business: ${encodeURIComponent(business)}
     Location: ${encodeURIComponent(location)}
     Email: ${encodeURIComponent(email)}
     Phone: ${encodeURIComponent(phone)}
-    Brand of Life Jacket: ${encodeURIComponent(brand)}
-    Type of Life Jacket: ${encodeURIComponent(type)}
-    Quantity of Life Jackets: ${encodeURIComponent(quantity)}
+    Type Of Service: ${encodeURIComponent(type)}
     Subject: ${encodeURIComponent(subject)}
     `;
 
@@ -80,26 +76,32 @@ const ContactForm = () => {
             <input type="number" id="phone" name="phone" placeholder="Your phone number.." required onChange={handleInputChange} value={formData.phone} />
           </div>
         </div>
-        <label htmlFor="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Write here.." required onChange={handleInputChange} value={formData.subject}></textarea>
-        <label htmlFor="life-jacket-brand">Brand of life jacket</label>
-        <input type="text" id="life-jacket-brand" name="brand" placeholder="Enter brand.." required onChange={handleInputChange} value={formData.brand} />
+        {/* <label htmlFor="life-jacket-brand">Brand of life jacket</label>
+        <input type="text" id="life-jacket-brand" name="brand" placeholder="Enter brand.." required onChange={handleInputChange} value={formData.brand} /> */}
         <div className="row">
-          <div className="col-md-6">
-            <label htmlFor="life-jacket-type">Type of life jacket</label>
-            <select id="life-jacket-type" name="type" required onChange={handleInputChange} value={formData.type}>
+          <div className="col-md-12">
+            <label htmlFor="service-type">Type Of Service</label>
+            <select id="service-type" name="type" required onChange={handleInputChange} value={formData.type}>
               <option value="" disabled>
                 Select a type
               </option>
-              <option value="solas">Solas</option>
-              <option value="non-solas">Non-Solas (ISO)</option>
+              <option value="chandler">Food chandler</option>
+              <option value="Life jacket servicing">Life jacket servicing</option>
+              <option value="Life jacket products">Life jacket products</option>
+              <option value="Crew transfers and transport">Crew transfers and transport</option>
+              <option value="Crew travel agent">Crew travel agent</option>
+              <option value="General LSA stock">General LSA stock</option>
+              <option value="Food catering">Food catering and delivery</option>
+              <option value="Other">Other</option>
             </select>
           </div>
-          <div className="col-md-6">
+          <label htmlFor="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write here.." required onChange={handleInputChange} value={formData.subject}></textarea>
+          {/* <div className="col-md-6">
             <label htmlFor="quantity">Quantity of life jackets</label>
             <input type="number" id="quantity" name="quantity" placeholder="Enter quantity.." required onChange={handleInputChange} value={formData.quantity} />
             <br />
-          </div>
+          </div> */}
         </div>
         <button id="submit" className="submit" type="submit" value="Submit">Submit</button>
       </form>

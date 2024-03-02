@@ -1,21 +1,109 @@
 /* Title */
-.servicing-title {
-    font-size: 3rem !important;
-    margin-bottom: 30px !important;
-} 
-
-/* Prices */
-.pricing {
-    /* background-color: #eff2f5de; */
-    padding: 20px;
-    background-color: #eff2f5de;
-    border-radius: 10px;
-    width: 60% !important;
-    margin: 35px auto !important;
-    border: 2px dashed #245c93;
-    text-align: center;
+.about {
+    height: 100%;
 }
 
+.servicing-title {
+    font-size: 3rem !important;
+    margin-bottom: 20px !important;
+} 
+
+.pricing-intro {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
+.list-container {
+    display: flex;
+}
+
+.list {
+    flex-wrap: 1;
+}
+
+.list:first-child {
+    margin-right: 40px;
+  }
+
+/* Services we offer */
+.service-main-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #245c93;
+    padding: 7px 0 7px 0;
+}
+
+.service-heading {
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    padding-top: 10px;
+}
+
+.services-main {
+    border-radius: 10px;
+    text-align: left;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.services-main ul {
+    line-height: 1.8;
+}
+
+.services {
+    border-radius: 10px;
+    width: 98%;
+    margin: 40px auto !important;
+    text-align: left;
+    padding: 10px;
+    margin-bottom: 30px;
+    background-color: #fff;
+}
+
+.services-container {
+    padding: 20px;
+    width: 90%;
+    margin: 0 auto;
+    border: 2px dashed #245c93;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.service-subheading:first-child {
+    margin-top: 0;
+}
+  
+.service-subheading:not(:first-child) {
+    margin-top: 40px;
+}
+  
+.service-subheading:last-child {
+    margin-bottom: 0;
+}
+
+.service-subheading {
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-left: 20px;
+    padding: 10px 0 10px 0;
+}
+
+.service-info {
+    padding: 20px 20px 0.1px 20px;
+    border-radius: 10px;
+    margin: 30px auto !important;
+    background-color: #72b3f4;
+}
+
+.services p {
+    font-size: 1.3rem;
+    margin-left: 20px;
+    padding: 8px 0 8px 0;
+}
+/* 
 .price-list {
     margin-bottom: 15px;
     font-family: 'Maven Pro', sans-serif;
@@ -28,12 +116,7 @@
     margin-top: 20px !important;
 }
 
-.pricing-intro {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-}
 
-/* Right jacket text */
 .pricing-heading {
     font-size: 1.9rem;
     font-weight: bold;
@@ -56,7 +139,6 @@
     margin-top: 20px !important;
 }
 
-/* Life Jacket Levels */
 .levels-section {
     background-color: #eff2f5de;
     border-radius: 10px;
@@ -100,10 +182,7 @@
     width: 30% !important;
 }
 
-  
-
-/* Contact text */
-.contact-link-text a, .repairs-text a {
+  .contact-link-text a, .repairs-text a {
     color: #245c93;
 }
   
@@ -111,7 +190,22 @@
     text-align: center !important;
     margin-top: 40px;
     font-size: 1.7rem;
-}  
+}   */
+
+
+.mail {
+    color: #245c93;
+    text-decoration: none;
+}
+  
+.mail:hover {
+    text-decoration: underline;
+}
+
+.servicing-title {
+    font-size: 3rem !important;
+    margin-bottom: 30px !important;
+} 
 
 
 @media (max-width: 1200px) {
@@ -148,9 +242,8 @@
         width: 100% !important;
         margin: 15px auto !important;
     }
-    .price-list {
-        font-size: 1.3rem !important;
-        text-align: left !important;
+    .services {
+        font-size: 1.2rem;
     }
     .pricing h2 {
         font-size: 1.7rem !important;
@@ -164,6 +257,14 @@
         padding: 10px 30px 10px 30px;
         margin-bottom: 30px !important;
     }
+    .list:first-child {
+        margin-right: 0px;
+    }
+    .list:last-child {
+        margin-right: 10px;
+    }
+    .list {
+        font-size: 1.2rem;
   }
 
 @media (max-width: 1500px) {
@@ -266,4 +367,7 @@
         font-size: 1.3rem !important;
     }
 }
+
+
+
 

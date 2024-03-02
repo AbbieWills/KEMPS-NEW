@@ -85,7 +85,8 @@ html {
 
 @media (min-width:481px) and (max-width: 1000px) {
     .navbar-brand {
-        font-size: 1.3rem !important;
+        font-size: 1.4rem !important;
+        text-align: center;
         margin: 0 auto !important;
     }
     .nav-link {

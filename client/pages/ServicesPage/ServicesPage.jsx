@@ -1,8 +1,7 @@
 import React from 'react';
 import './ServicesPage.css';
-import hundered from './hundered.png'
-import hundredfifty from './onefifty.png'
-import twohundredseventyfive from './twosevenfive.png'
+import ContactLink from '../../components/Contact/Contact-link';
+
 
 
 const ServicesPage = () => {
@@ -10,17 +9,142 @@ const ServicesPage = () => {
   return (
     <>
       <div className="about">
-        <h1 className='servicing-title'>Pricing and Servicing</h1>
-        <p className='pricing-intro'>At KempsMPS, we understand that quality service should also come with affordability. That's why we take pride in offering competitive pricing for all our life jacket servicing and maintenance services.</p>
-        <div className='pricing'>
-          <h2 className='pricing-heading'>Pricing</h2>
-          <div className='price-list'>
-              <strong>For Solas approved life jacket service:</strong> £20 (excluding the cost of any replaceable parts) <br/>
-              <strong>For Non-Solas life jacket service:</strong> £15 (excluding the cost of any replaceable parts)
-              <p className='repairs-text'>Please <a href='/contact'>contact us</a> for a quote regarding repairs</p>
-          </div>
+        <h1 className='servicing-title'>Services</h1>
+        <p className='pricing-intro'>At KempsMPS, we understand that quality services should also come with affordability. That's why we take pride in offering competitive pricing for all our customers.</p>
+        <div className='services-container'>
+          <div className='services-main'>
+          <h2 className='service-main-heading'>Services We Offer</h2>
+              <ul>
+                <li>24/7 service</li>
+                <li>Ship chandlery (provisions and stores)</li>
+                <li>Food catering and delivery service for cafes, farm shops, and restaurants (catering and general products)</li>
+                <li>Crew transfers & general transport</li>
+                <li>General courier service</li>
+                <li>Crew travel agent (flights, transport, and hotel bookings)</li>
+                <li>LSA servicing and stock</li>
+              </ul>
+            </div>
         </div>
-        <h2 className='sizing-guidelines'>Finding The Right Jacket For You </h2>
+        <div className='service-info'>
+        <h2 className='service-heading'>Service Infomation</h2>
+          <div className='services'>
+          <h3 className='service-subheading'>Ship Chandlery</h3>
+                <p>
+                Is your vessel needing provisions and stores when on the Humber? Well look no further. <br />  We're your local food chandler for the river Humber and all surrounding ports and wharfs. <br /> 
+                All new customers are eligible for a 20% discount for the first 3 orders. <br />
+                Contact the office for our product catalogue (full price list included) <a className='mail' href="mailto:enquiries@kempsmps.com">enquiries@kempsmps.com</a> and quote ‘ship chandler service’. <br /> 
+                We can cater to deep sea or coastal vessels and provide you with a competitive price 24/7, 365 days a year. </p>
+                </div>
+
+                <div className='services'>
+                <h3 className='service-subheading'>Catering and General Products</h3>
+                <div className="list-container">
+                      <p>
+                      <ul className="list">
+                        <li>Dairy</li>
+                        <li>Meats</li>
+                        <li>Fish</li>
+                        <li>Cooking ingredients</li>
+                        <li>Salt, herbs, spices</li> 
+                        <li>Frozen products</li>
+                        <li>Sauces</li>
+                        <li>Hot drinks</li>
+                        <li>Cold drinks</li>
+                      </ul>
+                    </p>
+                    <p>
+                      <ul className="list">
+                        <li>Breads</li>
+                        <li>Fruit</li>
+                        <li>Vegetables</li>
+                        <li>Sweets/biscuits</li>
+                        <li>Bottled drinks</li>
+                        <li>Laundry</li>
+                        <li>Cleaning products</li>
+                        <li>Kitchen products</li>
+                        <li>Paper products</li>
+                      </ul>
+                    </p>
+                    </div>
+                    <p>
+                    We are always looking how we can optimise our services, if there are items you cant find, get in touch and we can easily stock it.  <br />
+                    Ordering couldn’t be made more simple. <br />
+                    <ul>
+                      <li>Directly over the phone (07733404928)</li>
+                      <li>Via email <a className='mail' href="mailto:enquiries@kempsmps.com">enquiries@kempsmps.com</a></li>
+                      <li>Using our ordering program (sent via email)</li>
+                      <li>Using our online shopping portal (coming soon)</li>
+                    </ul>
+                    All products are quality controlled.
+                    </p>
+                </div>
+
+                <div className='services'>
+                <h3 className='service-subheading'>Our Services Include:</h3>
+                <p> 
+                <ul>
+                  <li>24/7 service</li>
+                  <li>Same day and next day delivery (T&C’s apply) no extra charge.</li>
+                  <li>No upfront payments required.</li>
+                  <li>Delivery to all areas of East Yorkshire.</li>
+                  <li>Minimum order of only £40.</li>
+                  <li>Payments made within the first 7 days of placing your order grants a 5% discount.</li>
+                </ul>
+                </p>
+                </div>
+
+                <div className='services'>
+                <h3 className='service-subheading'>Crew Transfers & General Transport</h3>
+                <p>
+                      Do you need a last minute crew transfer or an item delivering to or from the vessel? <br />
+                      Contact our 24hrs phone line on 07733404928 and let us take care of the situation. <br />
+                      <ul>
+                        <li>We have 5 seater and 9 seater vans available.</li> 
+                        <li>Get in touch for an accurate and competitive quote.</li>
+                      </ul>
+                      For an accurate quote email: <a className='mail' href="mailto:enquiries@kempsmps.com">enquiries@kempsmps.com</a> and quote 'Transport'
+                </p>
+                </div>
+
+                <div className='services'>
+                <h3 className='service-subheading'>General Courier Service</h3>
+                <p> Need a reliable and fully insured courier? Well look no further. <br />
+                    We have small vans and large vans to cover your delivery needs. <br /> 
+                    Ranging from a payload of 730kg for our small vans to 1.7t in our large sized vans. <br /> 
+                    <ul>
+                      <li>Small van dimensions: L1.78m x B1.56m x H1.1m </li>
+                      <li> Large van dimensions: L2.5m x B1.7m xH1.7m </li>
+                    </ul>
+                    For an accurate quote email: <a className='mail' href="mailto:enquiries@kempsmps.com">enquiries@kempsmps.com</a> and quote ‘Courier’ 
+                </p>
+                </div>
+
+                <div className='services'>
+                <h3 className='service-subheading'>LSA</h3>
+                <p>We fully stock all SOLAS and ISO lifejackets, covering a range from inherently buoyant options for recreation users to 100N to 300N+ lifejackets. (All lifejackets are serviced before sent out) <br />
+                <ul>
+                  <li>We stock a range of SOLAS approved LSA, contact the office with your product query.</li>
+                  <li>Lalizas approved lifejacket service center. We service ISO and SOLAS approved lifejackets.</li>
+                  <li>We can even rent lifejackets out!</li>
+
+                  </ul>
+                  Get in touch for LSA enquiries, advice and products: <a className='mail' href="mailto:enquiries@kempsmps.com">enquiries@kempsmps.com</a> and quote ‘LSA’ 
+                </p>
+            </div>
+        </div>
+      </div>
+      <ContactLink />
+      </>
+  );
+};
+
+
+export default ServicesPage;
+
+
+
+
+        {/* <h2 className='sizing-guidelines' id='sizing'>Finding The Right Jacket For You </h2>
         <p className='right-jacket-text'>Determining the ideal life jacket for your needs requires thoughtful consideration. Below is a helpful guide to assist you in making the right selection: </p>
           <p className='sizing-guidelines'> Sizing Guidelines: </p>
           <p className='sizing-text'>
@@ -50,12 +174,5 @@ const ServicesPage = () => {
           <img className='lj-photo' src={twohundredseventyfive} alt="275-lf" />
           </div>
         </div>
-        <p className='contact-link-text'> <a href='/contact'>Contact us</a> today to learn more about our services and how we can help you stay safe on the water.</p>
-      </div>
+      </div> */}
 
-    </>
-  );
-};
-
-
-export default ServicesPage;

@@ -34,18 +34,16 @@
   margin: 0 auto;
   margin-bottom: 20px;
   border: 1.5px solid #245c93;
-
 }
 
 
 .form label {
   font-weight: bold;
   margin-top: 10px;
-
 }
 
 .form input,
-.form textarea, #life-jacket-brand, #life-jacket-type {
+.form textarea, #service-type {
   width: 100%;
   padding: 15px;
   margin-bottom: 15px !important;
@@ -54,7 +52,10 @@
   transition: border-color 0.3s ease-in-out;
   margin: 0 auto;
   color: #245c93;
+}
 
+#subject {
+  width: 98.5%;
 }
 
 .form input:focus,
@@ -92,7 +93,18 @@
   }
 
   .form button {
-    width: 50%;
+    width: 40%;
   }
-  
+
+  #subject {
+    width: 96%;
+  }
+
+  .address {
+    font-size: 1.9rem;
+  }
+
+  .contact-form h1 {
+    font-size: 2.6rem !important;
+  }
 }

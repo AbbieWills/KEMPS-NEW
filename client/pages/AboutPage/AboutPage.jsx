@@ -1,27 +1,38 @@
 import React from 'react';
+import logoAbout from './aboutLogo.png';
+import ContactLink from '../../components/Contact/Contact-link';
 import './AboutPage.css';
-import harryPhoto from './harry-photo.png';
 
 const AboutPage = () => {
-
   return (
     <>
       <div className="about">
         <h1>About Us</h1>
-        <div className='service-text'>
-          <div className='row'>
-          <p className='col-sm-12 col-md-12 col-lg-9 harry-intro'> Hello, I am Harry, a navigation officer currently serving on oil tankers, and proudly assuming the role of Director at Kemps Maritime Professional Services (KempsMPS). <br/><br/> My unwavering commitment revolves around the paramount importance of safety and its continuous enhancement within the maritime sector. Consequently, I have chosen to devote my time to ensuring that all life jackets serviced through KempsMPS adhere to the most stringent safety standards.
-          <br/><br/> Our approach hinges on the pillars of quality assurance, comprehensive staff training, and the utilisation of cutting-edge servicing equipment. </p> <img className="photoOfHarry" src={harryPhoto} alt='PhotoOfHarry'></img></div>
-          <div className='why-choose'>
-        <h2>Why Choose KempsMPS?</h2>
-          <p>
-          In an industry characterised by non-stop operations 24/7, 365 days a year, it is abundantly clear that efficiency and punctuality are of the essence. Regrettably, many approved service stations fail to align with the rigorous schedules inherent to the shipping sector. Moreover, securing an appointment for life jacket servicing with these stations can often entail waiting for weeks on end. <br/> <br/>It is my firm belief that such a situation is in dire need of change, and KempsMPS is committed to leading this transformation.
-          KempsMPS understands the challenges posed by the shipping industry's demanding timelines, and we have taken decisive steps to address them. We operate round the clock to ensure the prompt collection and servicing of your life jackets. Additionally, we are committed to providing you with a realistic timeframe for the completion of the servicing process. Our aspiration is to deliver service of the highest safety standards with an expedited turnaround time.
-                    <br/><br/> Leveraging my extensive experience in the maritime industry, I am determined to enhance the efficiency and safety of life jacket servicing. At KempsMPS, we blend maritime expertise with unwavering dedication to redefine industry standards and meet the evolving needs of our valued clients. </p>           </div>
-
-          <p className='contact-link-text'><a className='contact-link' href='/contact'>Contact us</a> today to learn more about our services and how we can help you stay safe on the water.</p>
+        <div className="service-text">
+          <div className="row">
+            <img className="logoAbout" src={logoAbout} alt="logo" />
+            <p className="harry-intro">
+              Kemps Maritime Professional Services was founded in 2023. Over the past year, KEMPS has grown from being a single lifesaving appliance service station to expanding into a multifaceted service provider for the maritime industry, as well as catering to the food industry.
+              <br />
+              <br />
+              We are strategically located around the River Humber, which enables us to provide all of our services to ships visiting ports around the Humber and along the River Trent and Ouse. KEMPS specialises in ship chandlery and has recently diversified into catering delivery services for companies in the local area (K Chandler).
+              <br />
+              <br />
+              It became apparent that restaurant and café owners were having to use multiple food chandlers due to a lack of trust in certain products and unreliable delivery times. We quickly adapted to cater to the needs of owners in our local area by applying our ship chandler model to cafes and farm shops. We listened to feedback and implemented changes accordingly.
+              <br />
+              <br />
+              KEMPS was formally established to provide a comprehensive in-house service for ship owners and management companies, offering a one-stop shop for all maritime-related services. Our goal is to deliver on our promises by cutting out the time required to search for individual service providers, reducing overall costs, and being readily available at all times when needed.
+              <br />
+              <br />
+              Our goal at KEMPS is to provide our customers with the best service possible. We achieve this by being completely transparent, maintaining a 'can-do' attitude, and always finding solutions to challenges. We actively listen to our customers to understand how we can best collaborate with them. Our flexibility is paramount; we understand that maritime businesses operate outside normal schedules, which is why we are available 365 days a year. If your shipping company operates 24 hours a day, so do we.
+              <br />
+              <br />
+              With KEMPS, you can trust that your needs will be met efficiently and effectively, allowing you to focus on what matters most: the success of your operations.
+            </p>
+          </div>
         </div>
       </div>
+      <ContactLink />
 
     </>
   );
