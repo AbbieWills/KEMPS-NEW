@@ -12,7 +12,8 @@ const HomePage = () => {
 
       <div className="row intro-explain-container">
           {/* <ImageCarousel /> */}
-          <p className='welcome'>Welcome to Kemps Maritime Professional Services. We provide a local ship food chandlery service for all ports on the River Humber, Trent, and Ouse, as well as covering a range of in-house marine services 24 hours a day.</p>
+          <p className='welcome'>Welcome to Kemps Maritime Professional Services. <br />
+          We provide a local ship food chandlery service for all ports on the River Humber, Trent, and Ouse, as well as covering a range of in-house marine services 24 hours a day.</p>
           <Grid />
       </div>
 

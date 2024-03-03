@@ -10,7 +10,7 @@ const NavbarComponent = () => {
       <div className="container">
         <NavLink className="navbar-brand" to="/">
         Kemps Maritime Professional Services </NavLink>
-        {/* <img className="logo" src={logo} alt="logo" /> */}
+        <img className="logo" src={logo} alt="logo" />
         <button
           className="navbar-toggler"
           type="button"

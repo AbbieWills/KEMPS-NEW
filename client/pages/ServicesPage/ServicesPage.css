@@ -13,17 +13,17 @@
     margin-bottom: 40px;
 }
 
-.list-container {
-    display: flex;
+.services {
+    border-radius: 10px;
+    width: 98%;
+    margin: 40px auto !important;
+    text-align: left;
+    padding: 10px;
+    margin-bottom: 30px;
+    background-color: #fff;
 }
 
-.list {
-    flex-wrap: 1;
-}
 
-.list:first-child {
-    margin-right: 40px;
-  }
 
 /* Services we offer */
 .service-main-heading {
@@ -34,6 +34,15 @@
     padding: 7px 0 7px 0;
 }
 
+.services-main {
+    border-radius: 10px;
+    text-align: left;
+    padding: 10px;
+    margin-bottom: 10px;
+    
+}
+
+
 .service-heading {
     font-weight: bold;
     text-align: center;
@@ -41,25 +50,14 @@
     padding-top: 10px;
 }
 
-.services-main {
-    border-radius: 10px;
-    text-align: left;
-    padding: 10px;
-    margin-bottom: 10px;
+
+.services ul {
+    margin-top: 10px;
 }
 
-.services-main ul {
-    line-height: 1.8;
-}
-
-.services {
-    border-radius: 10px;
-    width: 98%;
-    margin: 40px auto !important;
-    text-align: left;
-    padding: 10px;
-    margin-bottom: 30px;
-    background-color: #fff;
+.services ul li {
+    flex-basis: calc(100% - 20px);
+    margin-right: 0; 
 }
 
 .services-container {
@@ -71,6 +69,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
+
 
 .service-subheading:first-child {
     margin-top: 0;
@@ -98,11 +97,84 @@
     background-color: #72b3f4;
 }
 
-.services p {
+.service-text {
     font-size: 1.3rem;
     margin-left: 20px;
     padding: 8px 0 8px 0;
+    margin-top: 0;
 }
+
+.list-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  .list-1, .list-2 {
+    flex: 0 0 calc(50% - 10px);
+    padding: 0;
+    margin: 0;
+  }
+  
+  .list-item {
+    margin-bottom: 10px;
+  }
+
+  .mail {
+    color: #245c93;
+    text-decoration: none;
+}
+  
+.mail:hover {
+    text-decoration: underline;
+}
+
+.servicing-title {
+    font-size: 3rem !important;
+    margin-bottom: 30px !important;
+} 
+
+  
+  @media (max-width: 600px) {
+    .servicing-title {
+        font-size: 1.8rem !important;
+        font-weight: bold;
+    }
+    .pricing-intro {
+        font-size: 1.3rem !important;
+    }
+    .services-main ul li {
+        align-content: flex-start !important;
+    }
+    .services-container, .services-info {
+        width: 100% !important;
+        padding: 0;
+    }
+    .service-heading, .service-subheading, .service-main-heading {
+        font-size: 1.5rem;
+    }
+    .list-container {
+        justify-content: flex-start;
+        margin-left: 20px;
+    }
+    .list-container:first-child {
+        padding-bottom: 100px;
+    }
+    .list-item {
+      align-self: flex-start;
+    }
+    .service-text {
+        font-size: 1.1rem;
+    }
+}
+
+    @media (max-width: 565px) {
+        .list-2 {
+            margin-top: -30px !important;
+          }
+  }
+  
+
 /* 
 .price-list {
     margin-bottom: 15px;
@@ -193,22 +265,8 @@
 }   */
 
 
-.mail {
-    color: #245c93;
-    text-decoration: none;
-}
-  
-.mail:hover {
-    text-decoration: underline;
-}
 
-.servicing-title {
-    font-size: 3rem !important;
-    margin-bottom: 30px !important;
-} 
-
-
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
     .individual {
       width: 90% !important;
       margin: 30px auto !important;
@@ -266,12 +324,8 @@
     .list {
         font-size: 1.2rem;
   }
-
-@media (max-width: 1500px) {
-    .pricing {
-        width: 100% !important;
-    }
 }
+
 
 @media (max-width: 500px) {
     .lj-photo {
@@ -367,7 +421,7 @@
         font-size: 1.3rem !important;
     }
 }
-
+ */
 
 
 

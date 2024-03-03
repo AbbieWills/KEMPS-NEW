@@ -63,9 +63,9 @@ html {
 
 /* logo */
 .logo {
-    width: 7%;
-    height: 7%;
-    transition: filer 0.3 ease;}
+    width: 6%;
+    height: 6%;
+}
 
 .logo:hover {
     filter: brightness(1.2);

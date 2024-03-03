@@ -29,7 +29,7 @@ const ServicesPage = () => {
         <h2 className='service-heading'>Service Infomation</h2>
           <div className='services'>
           <h3 className='service-subheading'>Ship Chandlery</h3>
-                <p>
+                <p className='service-text'>
                 Is your vessel needing provisions and stores when on the Humber? Well look no further. <br />  We're your local food chandler for the river Humber and all surrounding ports and wharfs. <br /> 
                 All new customers are eligible for a 20% discount for the first 3 orders. <br />
                 Contact the office for our product catalogue (full price list included) <a className='mail' href="mailto:enquiries@kempsmps.com">enquiries@kempsmps.com</a> and quote ‘ship chandler service’. <br /> 
@@ -39,34 +39,34 @@ const ServicesPage = () => {
                 <div className='services'>
                 <h3 className='service-subheading'>Catering and General Products</h3>
                 <div className="list-container">
-                      <p>
-                      <ul className="list">
-                        <li>Dairy</li>
-                        <li>Meats</li>
-                        <li>Fish</li>
-                        <li>Cooking ingredients</li>
-                        <li>Salt, herbs, spices</li> 
-                        <li>Frozen products</li>
-                        <li>Sauces</li>
-                        <li>Hot drinks</li>
-                        <li>Cold drinks</li>
+                      <p className='service-text'>
+                      <ul className="list-1">
+                        <li className="list-item">Dairy</li>
+                        <li className="list-item">Meats</li>
+                        <li className="list-item">Fish</li>
+                        <li className="list-item">Cooking ingredients</li>
+                        <li className="list-item">Salt, herbs, spices</li> 
+                        <li className="list-item">Frozen products</li>
+                        <li className="list-item">Sauces</li>
+                        <li className="list-item">Hot drinks</li>
+                        <li className="list-item">Cold drinks</li>
                       </ul>
                     </p>
-                    <p>
-                      <ul className="list">
-                        <li>Breads</li>
-                        <li>Fruit</li>
-                        <li>Vegetables</li>
-                        <li>Sweets/biscuits</li>
-                        <li>Bottled drinks</li>
-                        <li>Laundry</li>
-                        <li>Cleaning products</li>
-                        <li>Kitchen products</li>
-                        <li>Paper products</li>
+                    <p className='service-text'>
+                      <ul className="list-2">
+                        <li className="list-item">Breads</li>
+                        <li className="list-item">Fruit</li>
+                        <li className="list-item">Vegetables</li>
+                        <li className="list-item">Sweets/biscuits</li>
+                        <li className="list-item">Bottled drinks</li>
+                        <li className="list-item">Laundry</li>
+                        <li className="list-item">Cleaning products</li>
+                        <li className="list-item">Kitchen products</li>
+                        <li className="list-item">Paper products</li>
                       </ul>
                     </p>
                     </div>
-                    <p>
+                    <p className='service-text'>
                     We are always looking how we can optimise our services, if there are items you cant find, get in touch and we can easily stock it.  <br />
                     Ordering couldn’t be made more simple. <br />
                     <ul>
@@ -81,7 +81,7 @@ const ServicesPage = () => {
 
                 <div className='services'>
                 <h3 className='service-subheading'>Our Services Include:</h3>
-                <p> 
+                <p className='service-text'> 
                 <ul>
                   <li>24/7 service</li>
                   <li>Same day and next day delivery (T&C’s apply) no extra charge.</li>
@@ -95,7 +95,7 @@ const ServicesPage = () => {
 
                 <div className='services'>
                 <h3 className='service-subheading'>Crew Transfers & General Transport</h3>
-                <p>
+                <p className='service-text'>
                       Do you need a last minute crew transfer or an item delivering to or from the vessel? <br />
                       Contact our 24hrs phone line on 07733404928 and let us take care of the situation. <br />
                       <ul>
@@ -108,7 +108,7 @@ const ServicesPage = () => {
 
                 <div className='services'>
                 <h3 className='service-subheading'>General Courier Service</h3>
-                <p> Need a reliable and fully insured courier? Well look no further. <br />
+                <p className='service-text'> Need a reliable and fully insured courier? Well look no further. <br />
                     We have small vans and large vans to cover your delivery needs. <br /> 
                     Ranging from a payload of 730kg for our small vans to 1.7t in our large sized vans. <br /> 
                     <ul>
@@ -121,7 +121,7 @@ const ServicesPage = () => {
 
                 <div className='services'>
                 <h3 className='service-subheading'>LSA</h3>
-                <p>We fully stock all SOLAS and ISO lifejackets, covering a range from inherently buoyant options for recreation users to 100N to 300N+ lifejackets. (All lifejackets are serviced before sent out) <br />
+                <p className='service-text'>We fully stock all SOLAS and ISO lifejackets, covering a range from inherently buoyant options for recreation users to 100N to 300N+ lifejackets. (All lifejackets are serviced before sent out) <br />
                 <ul>
                   <li>We stock a range of SOLAS approved LSA, contact the office with your product query.</li>
                   <li>Lalizas approved lifejacket service center. We service ISO and SOLAS approved lifejackets.</li>
