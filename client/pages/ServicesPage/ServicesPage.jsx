@@ -107,6 +107,15 @@ const ServicesPage = () => {
                 </div>
 
                 <div className='services'>
+                <h3 className='service-subheading'>Crew Travel Agent</h3>
+                <p className='service-text'>
+                We’re fully set up to arrange your crews travel arrangements, be it from flights, transportation and hotels, with a full aftercare included. <br />
+                We’re available 24/7 to assist with any changes to your travel arrangements while your crews are on the move using our services. <br />
+                For this service contact: <a className='mail' href="mailto:enquiries@kempsmps.com">enquiries@kempsmps.com</a> and quote ‘Travel agent’
+                </p>
+                </div>
+
+                <div className='services'>
                 <h3 className='service-subheading'>General Courier Service</h3>
                 <p className='service-text'> Need a reliable and fully insured courier? Well look no further. <br />
                     We have small vans and large vans to cover your delivery needs. <br /> 

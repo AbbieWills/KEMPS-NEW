@@ -7,11 +7,11 @@ const AboutPage = () => {
   return (
     <>
       <div className="about">
-        <h1>About Us</h1>
+        <h1 className='kemps-title'>About Us</h1>
         <div className="service-text">
           <div className="row">
             <img className="logoAbout" src={logoAbout} alt="logo" />
-            <p className="harry-intro">
+            <p className="kemps-intro">
               Kemps Maritime Professional Services was founded in 2023. Over the past year, KEMPS has grown from being a single lifesaving appliance service station to expanding into a multifaceted service provider for the maritime industry, as well as catering to the food industry.
               <br />
               <br />

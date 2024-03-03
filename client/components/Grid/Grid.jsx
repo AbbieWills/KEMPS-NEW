@@ -12,10 +12,9 @@ const Grid = () => {
     return (
         <div className="grid">
         <div className="grid-item">
-            <a href="/services#sizing">
-                {/* MAKE THIS WORK ON CLICK */}
+            {/* <a href="/services#sizing"> */}
             <img src={ship} alt="ship" className="grid-photo" />
-            </a>
+            {/* </a> */}
             <p>Ship Chandler Service</p>
         </div>
         <div className="grid-item">

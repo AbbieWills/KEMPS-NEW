@@ -16,7 +16,7 @@
 .services {
     border-radius: 10px;
     width: 98%;
-    margin: 40px auto !important;
+    margin: 40px auto;
     text-align: left;
     padding: 10px;
     margin-bottom: 30px;
@@ -146,10 +146,18 @@
     .services-main ul li {
         align-content: flex-start !important;
     }
-    .services-container, .services-info {
-        width: 100% !important;
+    .services-container, .service-info {
+        width: 110% !important;
         padding: 0;
     }
+    .service-info {
+        padding: 2px !important;
+
+    }
+    .services {
+        margin: 10px auto;
+    }
+
     .service-heading, .service-subheading, .service-main-heading {
         font-size: 1.5rem;
     }

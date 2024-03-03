@@ -16,12 +16,12 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100vw !important;
-  height: 100vh !important;
+  width: 90vw !important;
+  height: 85vh !important;
   object-fit: contain;
   z-index: -1;
   padding-top: 50px;
-  opacity: 0.3;
+  opacity: 0.2;
 }
 
 .service-text {
@@ -30,10 +30,14 @@
   margin-top: 40px;
 }
 
+.kemps-intro {
+  margin-left: -18px !important;
+
+}
+
 .contact-link-text {
   margin-bottom: 50px;
   margin-top: -5px !important;
-
 }
 
 
