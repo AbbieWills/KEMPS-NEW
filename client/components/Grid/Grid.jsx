@@ -18,7 +18,9 @@ const Grid = () => {
             <p>Ship Chandler Service</p>
         </div>
         <div className="grid-item">
+        <a href="https://kchandler.net/" target="_blank">
             <img src={food} alt="food" className="grid-photo" />
+            </a>
             <p>Food Catering Delivery Service (K Chandler)</p>
         </div>
         <div className="grid-item">

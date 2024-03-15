@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClock, faLocationDot, faShip, faTruckFast } from '@fortawesome/free-solid-svg-icons';
 import Grid from '../../components/Grid/Grid';
 import ContactLink from '../../components/Contact/Contact-link';
+import Shop from '../../components/Shop/Shop';
 // import ImageCarousel from '../../components/Carousel/carousel.jsx';
 
 const HomePage = () => {
@@ -14,6 +15,7 @@ const HomePage = () => {
           {/* <ImageCarousel /> */}
           <p className='welcome'>Welcome to Kemps Maritime Professional Services. <br />
           We provide a local ship food chandlery service for all ports on the River Humber, Trent, and Ouse, as well as covering a range of in-house marine services 24 hours a day.</p>
+          <Shop />
           <Grid />
       </div>
 
