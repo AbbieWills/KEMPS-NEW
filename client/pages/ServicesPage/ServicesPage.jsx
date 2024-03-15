@@ -73,7 +73,7 @@ const ServicesPage = () => {
                       <li>Directly over the phone (07733404928)</li>
                       <li>Via email <a className='mail' href="mailto:enquiries@kempsmps.com">enquiries@kempsmps.com</a></li>
                       <li>Using our ordering program (sent via email)</li>
-                      <li>Using our online shopping portal (coming soon)</li>
+                      <li>Using our online shopping portal <a className='portal' href="https://kchandler.net/" target="_blank" rel="noopener noreferrer">HERE</a></li>
                     </ul>
                     All products are quality controlled.
                     </p>

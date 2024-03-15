@@ -39,7 +39,6 @@
     text-align: left;
     padding: 10px;
     margin-bottom: 10px;
-    
 }
 
 
@@ -133,6 +132,10 @@
     font-size: 3rem !important;
     margin-bottom: 30px !important;
 } 
+
+.portal {
+    color: #245c93;
+}
 
   
   @media (max-width: 600px) {
