@@ -42,9 +42,9 @@ const ContactForm = () => {
       <h1 className="address">Contact us</h1>
       <p className="address">
         Located in Hull, East Yorkshire, UK. <br /> Contact now to book a collection slot (30-mile radius) or delivery (rest of UK). <br /> <br />
-        enquiries@kempsmps.com <br /> <br/>
+        Email us at: enquiries@kempsmps.com <br /> <br/>
       </p>
-      <form className='form' onSubmit={composeMailTo}>
+      {/* <form className='form' onSubmit={composeMailTo}>
         <h2 className="address">Contact Form</h2>
         <div className="row">
           <div className="col-md-6">
@@ -76,8 +76,8 @@ const ContactForm = () => {
             <input type="number" id="phone" name="phone" placeholder="Your phone number.." required onChange={handleInputChange} value={formData.phone} />
           </div>
         </div>
-        {/* <label htmlFor="life-jacket-brand">Brand of life jacket</label>
-        <input type="text" id="life-jacket-brand" name="brand" placeholder="Enter brand.." required onChange={handleInputChange} value={formData.brand} /> */}
+          <label htmlFor="life-jacket-brand">Brand of life jacket</label>
+          <input type="text" id="life-jacket-brand" name="brand" placeholder="Enter brand.." required onChange={handleInputChange} value={formData.brand} />
         <div className="row">
           <div className="col-md-12">
             <label htmlFor="service-type">Type Of Service</label>
@@ -97,14 +97,14 @@ const ContactForm = () => {
           </div>
           <label htmlFor="subject">Subject</label>
         <textarea id="subject" name="subject" placeholder="Write here.." required onChange={handleInputChange} value={formData.subject}></textarea>
-          {/* <div className="col-md-6">
+          <div className="col-md-6">
             <label htmlFor="quantity">Quantity of life jackets</label>
             <input type="number" id="quantity" name="quantity" placeholder="Enter quantity.." required onChange={handleInputChange} value={formData.quantity} />
             <br />
-          </div> */}
+          </div>
         </div>
         <button id="submit" className="submit" type="submit" value="Submit">Submit</button>
-      </form>
+      </form> */}
     </div>
   );
 };
